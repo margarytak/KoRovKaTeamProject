@@ -1,0 +1,167 @@
+.test-img {
+    width: 280px;
+    height: 280px;
+    background-color: rgb(130, 0, 134);
+    margin-bottom: 40px;
+
+    @include tab {
+        width: 336px;
+        height:336px;
+
+        background-color: orangered;
+    }
+
+    @include desk {
+        width: 501px;
+        height:501px;
+        margin-right: 139px;
+
+        background-color: teal;
+    }
+}
+
+.about {
+}
+
+.about__title-box {
+    width: 200px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tab {
+        width: 429px;
+    }
+
+     @include desk {
+        width: 534px;
+    }
+}
+
+.about__title--text {
+    color: $text-secondary;
+    
+    font-family: $title-font;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 15px;
+
+     @include tab {
+    font-size: 26px;
+    line-height: 1.16;
+    }
+
+    @include desk {
+        font-size: 30px;
+        line-height: 1.13;
+    }
+}
+
+.about__title {
+    color: $main-btn;
+
+    font-family: $title-font;
+    font-size: 34px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include tab {
+    font-size: 48px;
+    line-height: 1.16;
+    }
+
+    @include desk {
+        font-size: 58px;
+        line-height: 1.13;
+    }
+}
+
+.about__box {
+@include tab {
+    display: flex;
+    justify-content: space-between;
+    }
+
+@include desk {
+         justify-content: normal;
+    }    
+}
+
+.about__text {
+    font-family: $main-font;
+    font-size: 12px;
+    line-height: 1.58;
+
+    &--top {
+        color: $text-dark;
+        margin-bottom: 40px;
+        @include tab {
+        font-size: 14px;
+        line-height: 1.78;
+        }
+        @include desk {
+         margin-bottom: 32px;
+        }
+    }
+
+    &--bottom {
+        color: $text-muted;
+        margin-bottom: 20px;
+        @include tab {
+        font-size: 14px;
+        line-height: 1.78;
+        }
+        @include desk {
+         margin-bottom: 40px;
+        }
+    }
+
+    @include tab {
+        width: 334px;
+    }
+
+    @include desk {
+         width: 463px;
+    }
+}
+
+.about__list {
+    @include desk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+}
+
+.about__btn {
+    border: 0;
+    border-radius: 20px;
+
+    color: $text-main;
+    background-color: $secondary-btn;
+
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 1.28;
+    font-weight: bold;
+
+    @include tab {
+        font-size: 16px;
+        line-height: 1.31;
+    }
+
+    @include desk {
+        font-size: 16px;
+        line-height: 1.31;
+    }
+    
+
+    padding: 13px 37px;
+    margin-bottom: 40px;
+
+    cursor: pointer;
+}

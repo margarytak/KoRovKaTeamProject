@@ -5,6 +5,12 @@
   min-width: 320px;
   @include mob {
     width: 320px;
+
+    &--about {
+      padding-top: 15px;
+
+      background-color: $bcg-light;
+    }
   }
   @include tab {
     width: 768px;
