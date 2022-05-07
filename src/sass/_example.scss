@@ -12,8 +12,8 @@
   font-family: monospace;
   font-size: 16px;
   font-weight: 700;
-  background-color: #009688;
-  color: #fff;
+  background-color: $bcg-light;
+  color: $text-secondary;
   padding: 2px 6px;
   border-radius: 2px;
 }
@@ -21,7 +21,7 @@
 .example .background {
   height: 240px;
   // Путь к изображениям из SASS-файла всегда такой, как из папки css
-  background-image: url('../images/demo.jpg');
+  background-color: $bcg-dark;
   background-size: cover;
   background-position: center;
 }
