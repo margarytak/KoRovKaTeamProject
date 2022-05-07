@@ -85,7 +85,37 @@ margin-bottom: 60px;
             line-height: 1.83;
             color: $text-muted;
     }
+    &__btn{
+        text-align: center;
+    }
+    &__btn-location{
+        @extend %btn;
+        padding: 14px 35px;
+        margin-right: 15px;
+        border-radius: 22px;
+
+        font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.31;
+            
+    }
+    &__btn-franchise{
+        @extend %btn-reverse;
+        padding: 14px 39px ;
+        border-radius: 22px;
+
+        font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.31;
+            &:hover{
+                background-color:$secondary-btn-hover;
+            }
+    }
 }
+
+
 .timetable{
 border-bottom: 1px solid #E1E1E1;
     border-top: 1px solid #E1E1E1;
@@ -97,8 +127,8 @@ border-bottom: 1px solid #E1E1E1;
 .contact{
     
     background-image: linear-gradient(to bottom,
-                $text-white 13%,
-                $bcg-light 13%,
+                $text-white 21%,
+                $bcg-light 21%,
                 $bcg-light 87%);
 }
 
