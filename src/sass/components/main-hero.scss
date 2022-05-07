@@ -19,10 +19,17 @@
 }
 .main-hero__btn-product {
     @extend %btn;
-    
+    padding: 11px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25px;
 }
 .main-hero__btn-made {
     @extend %btn-reverse;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25px;
+    padding: 11px;
 }
 .main-hero__wrapper {
     display: none;

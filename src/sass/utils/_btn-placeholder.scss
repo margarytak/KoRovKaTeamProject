@@ -1,10 +1,6 @@
 %btn {
-    padding: 11px;
-
     font-family: 'DM Sans';
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25px;
+
 
     border-radius: 20px;
     border: none;
@@ -13,12 +9,7 @@
     background: $main-btn;
 }
 %btn-reverse {
-    padding: 11px;
     font-family: 'DM Sans';
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25px;
-
     border-radius: 20px;
     border: none;
     cursor: pointer;
