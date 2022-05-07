@@ -1,0 +1,16 @@
+%btn {
+  font-family: 'DM Sans';
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: $text-white;
+  background: $main-btn;
+}
+%btn-reverse {
+  font-family: 'DM Sans';
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: $text-main;
+  background-color: $secondary-btn;
+}
