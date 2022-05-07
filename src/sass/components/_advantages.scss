@@ -1,0 +1,32 @@
+
+.advantages{
+    background-color: $bcg-light;
+
+    &.section{
+        padding-bottom: 80px;
+    }
+}
+.advantages__number{
+    font-family: $title-font;
+    color: $text-main;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 16px;
+    
+}
+
+.advantages__text{
+color: $text-dark;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.67;
+}
+
+.advantages__item{
+    margin-right: 70px;
+
+   &:not(:last-child){
+    margin-bottom: 32px;}
+}
