@@ -1,48 +1,47 @@
 .main-hero__container {
-    width: 100%;
-    background-color: $bcg-dark;
+  width: 100%;
+  background-color: $bcg-dark;
 }
-
 .main-hero__header {
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $text-white;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-white;
 }
 .main-hero__header-accent {
-    font-size: 48px;
-    line-height: 0.96;
-    color: $text-main;
+  font-size: 48px;
+  line-height: 0.96;
+  color: $text-main;
 }
 .main-hero__btn-product {
-    @extend %btn;
-    padding: 11px;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25px;
+  @extend %btn;
+  padding: 11px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25px;
 }
 .main-hero__btn-made {
-    @extend %btn-reverse;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25px;
-    padding: 11px;
+  @extend %btn-reverse;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25px;
+  padding: 11px;
 }
 .main-hero__wrapper {
-    display: none;
+  display: none;
 }
 .main-hero__title {
-    display: none;
+  display: none;
 }
 .main-hero__btn-modal {
-    display: none;
+  display: none;
 }
 .main-hero__milk {
-    display: none;
+  display: none;
 }
 .main-hero__girl {
-    display: none;
+  display: none;
 }
