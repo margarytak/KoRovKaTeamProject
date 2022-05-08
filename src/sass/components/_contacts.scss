@@ -1,0 +1,167 @@
+.contacts{
+// display: flex;
+// gap: 32px;
+margin-bottom: 60px;
+
+
+    &__item{
+    width: 395px;
+    background-color: $text-white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    }
+    
+
+    &__item-name{
+            display: inline-block;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.86;
+             
+            text-align: center;
+            letter-spacing: 0.04em;
+        
+            color: $text-white;
+            background-color: #F0D1A5;
+            border-radius: 6px;
+            padding-left:  16px;
+            padding-right: 16px;
+    }
+     &__wrap {
+             padding: 32px 0px;
+             
+             &:last-child{
+                 padding-bottom: 0;
+             }
+         }
+
+    &__place-town{
+        
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.86;
+            letter-spacing: 0.04em;
+            color: $text-dark;
+
+            display: block;
+            margin-bottom: 8px;
+    }
+    &__place-desc{
+        font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.83;
+            letter-spacing: 0.04em;
+        
+            color:$text-muted;
+    }
+   
+    &__timetable-wrap{
+        margin-bottom: 12px;
+    }
+    &__timetable-day{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $text-dark;
+
+    display: block;
+    }
+    &__timetable-time{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.86;
+        color: $text-secondary;
+    }
+    &__link{
+        font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.83;
+            color: $text-muted;
+    }
+    &__btn{
+        // text-align: center;
+       
+    }
+    &__btn-location{
+        @extend %btn;
+        padding: 14px 35px;
+        margin-right: 15px;
+        border-radius: 22px;
+
+        font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.31;
+            
+    }
+    &__btn-franchise{
+        @extend %btn-reverse;
+        padding: 14px 39px ;
+        border-radius: 22px;
+
+        font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.31;
+            &:hover{
+                background-color:$secondary-btn-hover;
+            }
+    }
+}
+
+
+.timetable{
+border-bottom: 1px solid #E1E1E1;
+    border-top: 1px solid #E1E1E1;
+}
+
+.food-truck{
+    background-color: #C2E297;
+}
+.contact{
+    
+    background-image: linear-gradient(to bottom,
+                $text-white 21%,
+                $bcg-light 21%,
+                $bcg-light 87%);
+}
+
+
+
+//  %btn {
+//     padding: 11px;
+
+//     font-family: 'DM Sans';
+//     font-weight: 400;
+//     font-size: 8px;
+//     line-height: 1.25px;
+
+//     border-radius: 20px;
+//     border: none;
+//     cursor: pointer;
+//     color: $secondary-btn;
+//     background: $main-btn;
+// }
+
+// %btn-reverse {
+//     padding: 11px;
+//     font-family: 'DM Sans';
+//     font-weight: 400;
+//     font-size: 8px;
+//     line-height: 1.25px;
+
+//     border-radius: 20px;
+//     border: none;
+//     cursor: pointer;
+//     color: $main-btn;
+//     background-color: $secondary-btn;
+// }
+
