@@ -1,4 +1,4 @@
-.mobile-menu {
+.mob-menu {
     position: fixed;
     
     display: flex;
@@ -19,41 +19,41 @@
     }
 }
 
-.mob-menu-button {
+.mob-menu-btn {
     display: block;
     z-index: 99;
 }
 
 @include desk {
-    .mob-menu-button {
+    .mob-menu-btn {
         display: none;
     }
 
 }
 
-.mob-menu-button__icon {
+.mob-menu-btn__icon {
     color: $accent-hover;
 }
 
-.mob-menu-button .mob-menu-button__icon--close {
+.mob-menu-btn .mob-menu-btn__icon--close {
     display: none;
 }
 
-.mob-menu-button.is-open .mob-menu-button__icon--close {
+.mob-menu-btn.is-open .mob-menu-btn__icon--close {
     display: block;
 
 }
 
-.mob-menu-button.is-open .mob-menu-button__icon--open {
+.mob-menu-btn.is-open .mob-menu-btn__icon--open {
     display: none;
 }
 
-.mob-menu-button:focus .mob-menu-button__icon--open,
-.mob-menu-button:focus .mob-menu-button__icon--close {
+.mob-menu-btn:focus .mob-menu-btn__icon--open,
+.mob-menu-btn:focus .mob-menu-btn__icon--close {
     fill: #ffffff;
 }
 
-.mobile-menu__main-button {
+.mob-menu__main-button {
     @extend %btn-reverse;
     display: inline-block;
     min-width: 159px;
@@ -69,7 +69,7 @@
 
 
 
-.mobile-menu__item {
+.mob-menu__item {
     border-top: 1px solid #E18298;
 }
 
