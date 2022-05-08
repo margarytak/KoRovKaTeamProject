@@ -1,0 +1,22 @@
+.products__subtitle {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: $text-secondary;
+   }
+   
+   .products__title {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: $text-main;
+   }
+   
+   .products__list {
+    display: flex;
+   }
+   
