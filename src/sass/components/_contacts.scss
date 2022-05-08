@@ -1,7 +1,8 @@
 .contacts{
-display: flex;
-gap: 32px;
+// display: flex;
+// gap: 32px;
 margin-bottom: 60px;
+
 
     &__item{
     width: 395px;
@@ -86,7 +87,8 @@ margin-bottom: 60px;
             color: $text-muted;
     }
     &__btn{
-        text-align: center;
+        // text-align: center;
+       
     }
     &__btn-location{
         @extend %btn;
