@@ -7,16 +7,39 @@
     color: $text-secondary;
    }
    
-   .products__title {
+.products__title {
     font-family: $title-font;
     font-weight: 400;
     font-size: 48px;
     line-height: 1.15;
     text-transform: uppercase;
     color: $text-main;
+    letter-spacing: 0.04em;
    }
    
-   .products__list {
+.products__list {
     display: flex;
    }
-   
+.product-card__overlay {
+       background-color: green;
+
+   }
+
+.product-card__name {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.04em;    
+   }
+
+.product-card__text {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.76;
+    color: $text-white;
+    letter-spacing: 0.04em; 
+}
