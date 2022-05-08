@@ -52,13 +52,9 @@ p {
   min-width: 320px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 320px;
-  }
-  .container--about {
-    padding-top: 15px;
-    background-color: #fff5f6;
   }
 }
 
@@ -74,27 +70,34 @@ p {
   }
 }
 
-.test-img {
-  width: 280px;
-  height: 280px;
-  background-color: #820086;
-  margin-bottom: 40px;
-}
-
-@media screen and (min-width: 768px) {
-  .test-img {
-    width: 336px;
-    height: 336px;
-    background-color: orangered;
-  }
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 @media screen and (min-width: 1280px) {
-  .test-img {
-    width: 501px;
-    height: 501px;
-    margin-right: 139px;
-    background-color: teal;
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section--about {
+  padding-top: 15px;
+  background-color: #fff5f6;
+}
+
+.section--about-bg {
+  background-image: url(/images/made-milk-mob-2x-min.png);
+  background-repeat: no-repeat;
+  background-position: 50% 78%;
+  background-size: contain;
+  max-width: 1280px;
+}
+
+@media screen and (min-width: 1280px) {
+  .section--about-bg {
+    background-image: url(/images/made-milk-desctop-2x-min.png);
   }
 }
 
@@ -122,6 +125,7 @@ p {
   font-family: "Titan One", cursive;
   font-size: 18px;
   line-height: 1.16;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 15px;
@@ -146,6 +150,7 @@ p {
   font-family: "Titan One", cursive;
   font-size: 34px;
   line-height: 1.14;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 }
@@ -183,10 +188,29 @@ p {
   }
 }
 
+.about__img {
+  width: 280px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__img {
+    width: 336px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__img {
+    margin-right: 139px;
+    width: 501px;
+  }
+}
+
 .about__text {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
   line-height: 1.58;
+  font-weight: 500;
+  width: 220px;
 }
 
 .about__text--top {
@@ -198,12 +222,14 @@ p {
   .about__text--top {
     font-size: 14px;
     line-height: 1.78;
+    width: 334px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about__text--top {
     margin-bottom: 32px;
+    width: 463px;
   }
 }
 
@@ -216,12 +242,14 @@ p {
   .about__text--bottom {
     font-size: 14px;
     line-height: 1.78;
+    width: 334px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about__text--bottom {
     margin-bottom: 40px;
+    width: 463px;
   }
 }
 
@@ -255,15 +283,27 @@ p {
 .about__btn {
   border: 0;
   border-radius: 20px;
+  padding: 13px 37px;
   color: #d41443;
   background-color: #fff;
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   line-height: 1.28;
   font-weight: bold;
-  padding: 13px 37px;
-  margin-bottom: 40px;
   cursor: pointer;
+}
+
+.about__btn:hover {
+  border: solid 2px;
+  border-color: #d41443;
+  -webkit-animation: pulsate 1s ease-in-out;
+          animation: pulsate 1s ease-in-out;
+}
+
+.about__btn--svg {
+  width: 5px;
+  height: 8px;
+  margin-left: 13px;
 }
 
 @media screen and (min-width: 768px) {
@@ -277,6 +317,21 @@ p {
   .about__btn {
     font-size: 16px;
     line-height: 1.31;
+    width: 179px;
+  }
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-box-shadow: 0 0 20px #c7133e, 0 0 40px #8a0323;
+            box-shadow: 0 0 20px #c7133e, 0 0 40px #8a0323;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-box-shadow: 0 0 20px #c7133e, 0 0 40px #8a0323;
+            box-shadow: 0 0 20px #c7133e, 0 0 40px #8a0323;
   }
 }
 /*# sourceMappingURL=main.css.map */
