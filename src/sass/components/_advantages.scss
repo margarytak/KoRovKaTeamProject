@@ -1,16 +1,15 @@
 
-.advantages{
-    background-color: $bcg-light;
-    padding-bottom: 80px;
+.advantages {
+  background-color: $bcg-light;
+  padding-top: 20px;
 }
-.advantages__number{
-    font-family: $title-font;
-    color: $text-main;
-    font-size: 36px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-
-    margin-bottom: 13px; 
+.advantages__number {
+  font-family: $title-font;
+  color: $text-main;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  margin-bottom: 13px;
 }
 
 .advantages__text{
@@ -20,9 +19,36 @@ font-size: 12px;
 line-height: 1.67;
 }
 
-.advantages__item{
-    max-width: 230px;
+.advantages__item {
+  max-width: 230px;
 
-   &:not(:last-child){
-    margin-bottom: 32px;}
+  &::before {
+      content: "";
+      display: block;
+      height: 50px;
+      margin-bottom: 16px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+  &:nth-child(1)::before{
+    width: 33px;
+    background-image: url("../images/made-icon1-min.png");
+  }
+
+  &:nth-child(2)::before {
+      width: 50px;
+      background-image: url("../images/made-icon2-min.png");
+    }
+
+  &:nth-child(3)::before {
+      width: 44px;
+      background-image: url("../images/made-icon3-min.png");
+    }
+
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
+
