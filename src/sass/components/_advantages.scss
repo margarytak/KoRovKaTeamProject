@@ -12,11 +12,11 @@
   margin-bottom: 13px;
 }
 
-.advantages__text{
-color: $text-dark;
-font-weight: 700;
-font-size: 12px;
-line-height: 1.67;
+.advantages__text {
+  color: $text-dark;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
 }
 
 .advantages__item {
@@ -45,7 +45,6 @@ line-height: 1.67;
       width: 44px;
       background-image: url("../images/made-icon3-min.png");
     }
-
 
   &:not(:last-child) {
     margin-bottom: 32px;
