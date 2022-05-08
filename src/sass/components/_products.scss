@@ -1,3 +1,8 @@
+.products {
+    padding-top: 80px;
+}
+
+
 .products__subtitle {
     font-family: $title-font;
     font-weight: 400;
@@ -15,14 +20,26 @@
     text-transform: uppercase;
     color: $text-main;
     letter-spacing: 0.04em;
+    text-align: center;
    }
-   
-.products__list {
-    display: flex;
-   }
-.product-card__overlay {
-       background-color: green;
 
+.product-card {
+    width: 280px;
+}
+   
+
+.product-card__overlay {
+
+       background-color: $bcg-dark;
+       padding-top: 160px;
+       padding-left: 40px;
+       padding-right: 40px;
+       padding-bottom: 40px;
+       border: 1px;
+       border: transparent;
+       border-radius: 24px;
+
+       position: relative;
    }
 
 .product-card__name {
@@ -31,9 +48,34 @@
     font-size: 20px;
     line-height: 1.15;
     text-transform: uppercase;
-    color: black;
-    letter-spacing: 0.04em;    
+    color: $text-white;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 70px;    
    }
+
+   .product-card__name::after {
+    content: '';
+    position: absolute;
+    left: 127px;
+    top: 215px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  .product-card__name::after {
+    content: '';
+    position: absolute;
+    left: 137px;
+    top: 215px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: blue;
+  }
 
 .product-card__text {
     font-family: $main-font;
@@ -41,5 +83,6 @@
     font-size: 14px;
     line-height: 1.76;
     color: $text-white;
-    letter-spacing: 0.04em; 
+    letter-spacing: 0.04em;
+    text-align: center;
 }
