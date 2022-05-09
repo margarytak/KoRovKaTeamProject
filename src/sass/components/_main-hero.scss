@@ -6,6 +6,10 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
+  @include desk {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .main-hero__container-position {
   @extend .container;
@@ -25,6 +29,10 @@
       font-size: 22px;
       line-height: 1.14;
   }
+    @include desk {
+      font-size: 38px;
+      line-height: 1.16;
+    }
 }
 .main-hero__header-accent {
   font-size: 48px;
@@ -33,6 +41,10 @@
 @include tab {
   font-size: 34px;
     line-height: 0.91;
+}
+@include desk {
+  font-size: 58px;
+    line-height: 0.9;
 }
 }
 .main-hero__list {
@@ -43,6 +55,10 @@
   padding-bottom: 0;
   margin-top: 7px;
   margin-bottom: 20px;
+}
+@include desk {
+    margin-top: 24px;
+      margin-bottom: 40px;
 }
 }
 .main-hero__btn-product {
@@ -85,6 +101,10 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #D41443;
+    @include desk {
+      font-size: 46px;
+        line-height: 1.15;
+    }
     &::after {
       content: "";
       display: block;
@@ -110,20 +130,39 @@
   font-size: 8px;
   line-height: 1.25;
   color: #FFFFFF;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 .main-hero__title {
   display: none;
     @include tab {
         display: block;
+          width: 114px;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 1.5;
+            color: #FFFFFF;
+      }
+      @include desk {
+        width: 200px;
+        font-size: 14px;
+          line-height: 1.43;
       }
 }
 .main-hero__btn-modal {
   display: none;
     @include tab {
+      margin-top: 3px;
         display: block;
           border: none;
             border-radius: 50%;
             background-color: #fff;
+      }
+      @include desk {
+        margin-top: 19px;
       }
 }
 .main-hero__bottom {
@@ -134,14 +173,7 @@
         margin-top: 20px;
       }
 }
-.main-hero__title {
-  width: 114px;
-  font-family: 'DM Sans';
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.5;
-    color: #FFFFFF;
-}
+
 .main-hero__icecream {
   position: absolute;
   right: 0;
@@ -161,5 +193,8 @@
   position: absolute;
   bottom: -15px;
   right: 0;
+  }
+  @include desk {
+    bottom: -60px;
   }
 }
