@@ -1,42 +1,69 @@
 <section class="section reviews">
   <div class="container">
+    <h2 class="visually-hidden">Customer Reviews</h2>
     <div class="reviews__slider">
-      <div class="reviews__slider-card">
-        <img src="" alt="" />
-        <div class="reviews__card-quote">
-          <p>
+      <div class="reviews__slider-card fade slide-active">
+        <img
+          class="reviews__slider-image"
+          srcset="/images/reviews-foto1-1x-min.png 1x, /images/reviews-foto1-2x-min.png 2x"
+          alt="Emily's photo"
+        />
+        <div class="reviews__slider-quote-wrap">
+          <p class="reviews__slider-quote">
             Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
             hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
           </p>
         </div>
-        <div class="reviews__card-customer">
-          <h4 class="reviews__card-customer-name">Emily, Los Angeles</h4>
+        <div class="reviews__slider-customer">
+          <svg class="reviews__slider-customer-icon" width="32" height="4">
+            <use href="/images/icons.svg#icon-reviews-dot-group"></use>
+          </svg>
+          <h4 class="reviews__slider-customer-name">Emily, Los Angeles</h4>
         </div>
       </div>
-      <div class="reviews__slider-card">
-        <img src="" alt="" />
-        <div class="reviews__card-quote">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis mollitia rem
-            obcaecati consequatur dignissimos facilis, deleniti sapiente dolor consequuntur nemo.
-            Dolor repellendus explicabo reiciendis.
+      <div class="reviews__slider-card fade">
+        <img
+          class="reviews__slider-image"
+          srcset="/images/reviews-foto2-1x-min.png 1x, /images/reviews-foto2-2x-min.png 2x"
+          alt="Brianna's photo"
+        />
+        <div class="reviews__slider-quote-wrap">
+          <p class="reviews__slider-quote">
+            Lorem ipsum dolor. Perspiciatis mollitia rem obcaecati consequatur dignissimos facilis,
+            deleniti sapiente dolor consequuntur nemo. Dolor repellendus explicabo reiciendis.
           </p>
         </div>
-        <div class="reviews__card-customer">
-          <h4 class="reviews__card-customer-name">Brianna, New York</h4>
+        <div class="reviews__slider-customer">
+          <svg class="reviews__slider-customer-icon" width="32" height="4">
+            <use href="/images/icons.svg/#icon-reviews-dot-group"></use>
+          </svg>
+          <h4 class="reviews__slider-customer-name">Brianna, New York</h4>
         </div>
       </div>
-      <div class="reviews__slider-card">
-        <img src="" alt="" />
-        <div class="reviews__card-quote">
-          <p>
-            Quis, enim atque eos ipsa commodi nostrum maxime necessitatibus laudantium iure quam
-            quos! Minus vero reiciendis laborum odio voluptates quibusdam quae repellat.
+      <div class="reviews__slider-card fade">
+        <img
+          class="reviews__slider-image"
+          srcset="/images/reviews-foto3-1x-min.png 1x, /images/reviews-foto3-2x-min.png 2x"
+          alt="Anne's photo"
+        />
+        <div class="reviews__slider-quote-wrap">
+          <p class="reviews__slider-quote">
+            Quis, commodi nostrum maxime necessitatibus laudantium iure quam quos! Minus vero
+            reiciendis laborum odio voluptates quibusdam quae repellat. orem ipsum dolor.
+            Perspiciatis mollitia rem.
           </p>
         </div>
-        <div class="reviews__card-customer">
-          <h4 class="reviews__card-customer-name">Anne, San Francisco</h4>
+        <div class="reviews__slider-customer">
+          <svg class="reviews__slider-customer-icon" width="32" height="4">
+            <use href="/images/icons.svg/#icon-reviews-dot-group"></use>
+          </svg>
+          <h4 class="reviews__slider-customer-name">Anne, San Francisco</h4>
         </div>
+      </div>
+      <div class="reviews__slider-switch">
+        <span class="reviews__slider-switch-dot btn-active" id="one"></span>
+        <span class="reviews__slider-switch-dot" id="two"></span>
+        <span class="reviews__slider-switch-dot" id="three"></span>
       </div>
     </div>
   </div>
