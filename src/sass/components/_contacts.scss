@@ -2,10 +2,12 @@
 
 margin-bottom: 32px;
 
+
 @include tab {
     display: flex;
     gap: 32px;
     margin-bottom: 40px;
+    
 }
 @include desk{
     margin-bottom: 60px;
@@ -18,11 +20,11 @@ margin-bottom: 32px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px;
-    margin-bottom: 20px;
+    
     margin-left: auto;
     margin-right: auto;
-    &:last-child{
-        margin-bottom: 0px;
+    &:not(:last-child){
+        margin-bottom: 20px;
         
     }
 
@@ -67,10 +69,10 @@ margin-bottom: 32px;
     }
      &__wrap {
              padding-top: 24px;
-             padding-bottom: 24px;
              
-             &:last-child{
-                 padding-bottom: 0;
+             
+             &:not(:last-child){
+                 padding-bottom: 24px;
              }
                            @include tab {
                             padding: 32px 0px;
@@ -179,12 +181,12 @@ margin-bottom: 32px;
     }
     &__btn-icon{
         
-        margin-left: 13px;
+        margin-left: 10px;
         
     }
 
     &__btn-icon-rev{
-        margin-left: 13px;
+        margin-left: 10px;
     }
 
 
@@ -192,6 +194,9 @@ margin-bottom: 32px;
         
         @media screen and (max-width: 767px){
             margin-bottom: 10px;
+            margin-right: 0px;
+            padding: 14px 17px;
+            min-width: 162px;
         }
         @extend %btn;
         padding: 14px 35px;
@@ -205,6 +210,11 @@ margin-bottom: 32px;
             
     }
     &__btn-franchise{
+        @media screen and (max-width: 767px) {
+                
+                padding: 14px 17px;
+                width: 162px;
+            }
         @extend %btn-reverse;
         padding: 14px 39px ;
         border-radius: 22px;
@@ -234,40 +244,23 @@ border-bottom: 1px solid #E1E1E1;
                 $text-white 21%,
                 $bcg-light 21%,
                 $bcg-light 87%);
+
+                padding-top: 24px;
+                    padding-bottom: 24px;
+                    @include tab{
+                        padding-bottom: 20px;
+                        padding-top: 40px;
+                    }
+                    @include desk{
+                        padding-top: 60px;
+                        padding-bottom: 60px;
+                    }
 }
 
 
 
-//  %btn {
-//     padding: 11px;
 
-//     font-family: 'DM Sans';
-//     font-weight: 400;
-//     font-size: 8px;
-//     line-height: 1.25px;
-
-//     border-radius: 20px;
-//     border: none;
-//     cursor: pointer;
-//     color: $secondary-btn;
-//     background: $main-btn;
-// }
-
-// %btn-reverse {
-//     padding: 11px;
-//     font-family: 'DM Sans';
-//     font-weight: 400;
-//     font-size: 8px;
-//     line-height: 1.25px;
-
-//     border-radius: 20px;
-//     border: none;
-//     cursor: pointer;
-//     color: $main-btn;
-//     background-color: $secondary-btn;
-// }
 
 // Юлия Ораз20:55 https: //prnt.sc/9pZSql0PzE5I
 // https: //prnt.sc/oI4V3BsTLOuW
 
-// fill="none"
