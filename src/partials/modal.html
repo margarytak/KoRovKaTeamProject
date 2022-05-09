@@ -1,0 +1,54 @@
+<!-- Модальные окна -->
+<!-- Окно Read more -->
+<button type="button" class="button read-more--open js-open-modal" data-modal="1"><span> Read more </span> <svg class="icon" width="7" height="10">
+  <use href="../src/images/icons.svg#icon-vector-button"></use>
+</svg></button>
+<button type="button" class="button our-location--open js-open-modal" data-modal="2"><span> Our Locations</span>  <svg class="icon" width="7" height="10">
+  <use href="../src/images/icons.svg#icon-vector-button"></use>
+</svg></button>
+<button type="button" class="button franchise--open js-open-modal" data-modal="3"><span> franchise </span> <svg class="icon" width="7" height="10">
+  <use href="../src/images/icons.svg#icon-vector-button"></use>
+</svg></button>
+  <div class="read-more modal" data-modal="1">
+    <button type="button" class="button read-more__button--close js-modal-close">
+      <svg class="icon" width="14" height="14">
+        <use href="../src/images/icons.svg#icon-close1"></use>
+      </svg>
+    </button>
+    <h2 class="read-more__title">how it’s made?</h2>
+    <p class="read-more__text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ea, at distinctio qui, corrupti
+      iure praesentium tenetur illo eos officiis nihil reiciendis quo repellat neque vitae atque
+      ducimus earum? Repudiandae?
+    </p>
+    <iframe
+    class="read-more__video"
+      src="https://www.youtube.com/embed/lO6DiuUAviI"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <div class="our-locations modal" data-modal="2">
+    <button type="button" class="button our-locations__button--close js-modal-close">
+      <svg class="icon" width="14" height="14">
+        <use href="../src/images/icons.svg#icon-close1"></use>
+      </svg>
+      </button>
+    <h2 class="our-locations__title">Our Locations</h2>
+    <iframe class="our-locations__map" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405345.4090883831!2d-84.87217567774869!3d37.46636433580282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8842fd372a5b59d7%3A0xef6e4822c4e85bef!2sBaskin-Robbins!5e0!3m2!1sru!2sua!4v1652100863283!5m2!1sru!2sua" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="franchise modal" data-modal="3">
+    <p class="franchise__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, minus!</p>
+    <a href="#" download="">
+      <button type="button" class="button franchise__button">Download file</button>
+    </a>
+  </div>
+  <div class="overlay js-overlay-modal"></div>
+</div>
