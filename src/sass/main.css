@@ -45,16 +45,24 @@ p {
   clip: rect(0 0 0 0);
 }
 
+.about__btn {
+  font-family: 'DM Sans';
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: #d41443;
+  background-color: #fff;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  min-width: 320px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 320px;
+    width: 480px;
   }
 }
 
@@ -302,16 +310,10 @@ p {
 }
 
 .about__btn {
-  border: 0;
-  border-radius: 20px;
   padding: 13px 37px;
-  color: #d41443;
-  background-color: #fff;
-  font-family: "DM Sans", sans-serif;
   font-size: 14px;
   line-height: 1.28;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .about__btn:hover {
@@ -319,6 +321,7 @@ p {
   border-color: #d41443;
   -webkit-animation: pulsate 1s ease-in-out;
           animation: pulsate 1s ease-in-out;
+  width: 183px;
 }
 
 .about__btn--svg {
