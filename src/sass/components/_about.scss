@@ -1,5 +1,20 @@
+.section--about {
+    background-color: $bcg-light;
+    
+    @include tab {
+        padding-top: 20px;
+    }
+
+    @include desk {
+        padding-top: 60px;
+    }
+}
+
 .section--about-bg {
     background-image: url(/images/made-milk-mob-2x-min.png);
+    @include tab {
+        background-image: none;
+    }
     @include desk {
         background-image: url(/images/made-milk-desctop-2x-min.png) ;
     }
@@ -34,11 +49,11 @@
     text-transform: uppercase;
     text-align: center;
 
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 
     @include tab {
-    font-size: 26px;
-    line-height: 1.16;
+        font-size: 26px;
+        line-height: 1.16;
     }
 
     @include desk {
@@ -58,44 +73,49 @@
     text-align: center;
 
     @include tab {
-    font-size: 48px;
-    line-height: 1.16;
+        font-size: 48px;
+        line-height: 1.16;
+        margin-bottom: 40px;
     }
 
     @include desk {
         font-size: 58px;
         line-height: 1.13;
+        margin-bottom: 60px;
     }
 }
 
 .about__box {
 @include tab {
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-around;
     }
 
 @include desk {
-    justify-content: normal;
+        justify-content: normal;
     }    
 }
 
 .about__img {
     width: 280px;
+    margin-bottom: 40px;
 
     @include tab {
         width: 336px;
+        margin-bottom: 0;
     }
 
     @include desk {
-        margin-right: 139px;
         width: 501px;
+        margin-right: 139px;
+        margin-bottom: 0;
     }
 }
 
 .about__text {
     font-family: $main-font;
     font-size: 12px;
-    line-height: 1.58;
+    line-height: 1.62;
     font-weight: 500;
     width: 220px;
 
@@ -118,7 +138,7 @@
         margin-bottom: 20px;
         @include tab {
         font-size: 14px;
-        line-height: 1.78;
+        margin-bottom: 40px;
         width: 334px;
         }
         @include desk {
@@ -132,15 +152,15 @@
     }
 
     @include desk {
-    width: 463px;
+        width: 463px;
     }
 }
 
 .about__list {
     @include desk {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
