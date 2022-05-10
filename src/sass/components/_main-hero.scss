@@ -210,15 +210,15 @@ screen and (-o-min-device-pixel-ratio: 2 / 1) {
   z-index: -1;
 
   @include tab {
-    width: 335px;
-    height: 373px;
+    // width: 335px;
+    // height: 373px;
     right: 50%;
     bottom: 50%;
     transform: translate(50%, 50%);
   }
   @include desk {
-    width: 534px;
-    height: 611px;
+    // width: 534px;
+    // height: 611px;
   }
 }
 .main-hero__girl{
