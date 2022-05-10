@@ -1,7 +1,11 @@
 
 .advantages {
   background-color: $bcg-light;
-  padding-top: 20px;
+
+  @media screen and (max-width: 767px){
+   padding-top: 20px;
+  }
+  
 }
 .advantages__number {
   font-family: $title-font;
