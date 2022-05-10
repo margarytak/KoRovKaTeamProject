@@ -18,26 +18,26 @@
     background-color: #ecebeb;
   }
 }
-.our-location--open {
-  padding: 11px 17px 12px 17px;
-  border-radius: 22px;
-  background-color: #d41342;
-  color: $secondary-btn;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  display: flex;
-  align-items: baseline;
-  transition: background-color $ainim-fast;
-  & .icon {
-    fill: #ffff;
-    margin-left: 13.5px;
-  }
-  &:hover,
-  &:focus {
-    background-color: #c7133e;
-  }
-}
+// .our-location--open {
+//   padding: 11px 17px 12px 17px;
+//   border-radius: 22px;
+//   background-color: #d41342;
+//   color: $secondary-btn;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.31;
+//   display: flex;
+//   align-items: baseline;
+//   transition: background-color $ainim-fast;
+//   & .icon {
+//     fill: #ffff;
+//     margin-left: 13.5px;
+//   }
+//   &:hover,
+//   &:focus {
+//     background-color: #c7133e;
+//   }
+// }
 .franchise--open {
   padding: 11px 37px 12px 37px;
   border-radius: 22px;

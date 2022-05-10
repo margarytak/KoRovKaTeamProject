@@ -24,7 +24,9 @@ margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
 
-    // transition: scale ;
+    transition-duration: 500ms;
+    transition: background-color $ainim-fast, transform $ainim-fast;
+
     @media screen and (max-width: 767px){
     &:not(:last-child){
         margin-bottom: 20px;
@@ -175,6 +177,8 @@ transform: scale(1.05);
             font-size: 12px;
             line-height: 1.5;
             color: $text-muted;
+
+            transition: color $ainim-fast, font-size $ainim-fast;
             @include tab {
                     font-size: 14px;
                     line-height: 1.83;
@@ -183,7 +187,7 @@ transform: scale(1.05);
                 @include desk {
                     font-size: 16px;
                 }
-    }
+       }
     &__btn{
         
         text-align: center;
@@ -224,6 +228,9 @@ transform: scale(1.05);
             font-weight: 700;
             font-size: 16px;
             line-height: 1.31;
+
+             transition:background-color $ainim-fast,
+             box-shadow $ainim-fast ;
             &:hover{
                background-color: $main-btn-hover;
             box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
@@ -244,6 +251,9 @@ transform: scale(1.05);
             font-weight: 700;
             font-size: 16px;
             line-height: 1.31;
+
+            transition:background-color $ainim-fast, box-shadow $ainim-fast ;
+
             &:hover{
                 background-color:$secondary-btn-hover;
                 box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
@@ -278,7 +288,10 @@ border-bottom: 1px solid #E1E1E1;
                         padding-bottom: 60px;
                     }
 }
-
+.contacts__item:hover .contacts__link{
+    color: $text-main;
+    font-size: 16px;
+}
 
 
 
