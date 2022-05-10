@@ -1,6 +1,11 @@
+
 .advantages {
   background-color: $bcg-light;
-  padding-top: 20px;
+
+  @media screen and (max-width: 767px){
+   padding-top: 20px;
+  }
+  
 }
 .advantages__number {
   font-family: $title-font;
@@ -9,6 +14,17 @@
   line-height: 1.14;
   letter-spacing: 0.04em;
   margin-bottom: 13px;
+
+  @include tab {
+    font-size: 48px;
+    line-height: 1.16;
+  }
+
+    @include desk{
+      font-size: 58px;
+      line-height: 1.14;
+      margin-bottom: 16px;
+    }
 }
 
 .advantages__text {
@@ -16,11 +32,82 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
+
+  @include tab {
+  font-size: 14px;
+    line-height: 1.71;
+  }
+
+  @include desk {
+      font-size: 16px;
+      line-height: 1.75;
+  }
+}
+
+.advantages__list {
+  @include tab {
+    display: flex;
+    justify-content: space-between;
+    width: 527px;
+  }
+  
+    @include desk {
+      width: 1141px;
+    }
+
 }
 
 .advantages__item {
-  max-width: 230px;
-  &:not(:last-child) {
-    margin-bottom: 32px;
+  width: 230px;
+
+  @include tab {
+    width: 160px;
   }
+  
+  @include desk {
+      width: 288px;
+    }
+
+  &::before {
+      content: "";
+      display: block;
+      height: 50px;
+      margin-bottom: 16px;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @include tab {
+        margin-bottom: 36px;
+      }
+
+      @include desk {
+        margin-bottom: 40px;
+      }
+    }
+    
+  &:nth-child(1)::before{
+    width: 33px;
+    background-image: url("../images/made-icon1-min.png");
+  }
+
+  &:nth-child(2)::before {
+      width: 50px;
+      background-image: url("../images/made-icon2-min.png");
+    }
+
+  &:nth-child(3)::before {
+      width: 44px;
+      background-image: url("../images/made-icon3-min.png");
+    }
+
+  &:not(:last-child) {
+    
+    @media screen and (max-width: 767px){
+      margin-bottom: 32px;
+    }
+  }
+
+ 
 }
+
+
