@@ -108,9 +108,14 @@
     &::after {
       content: "";
       display: block;
+            width: 16px;
+              height: 16px;
       background-image: url(../images/hero-ellipse-tab-min.png);
-      width: 16px;
-      height: 16px;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-moz-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2 / 1) {
+        background-image: url(../images/hero-ellipse-tab-2x-min.png);
+        }
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;
@@ -119,9 +124,28 @@
       // transform: translate(50%, 50%);
       z-index: -1;
       @include desk {
-        background-image: url(../images/hero-ellipse-desctop-min.png);
+        width: 30px;
+        height: 30px;
+        top: -7px;
+        right: -15px;
+        background-image: url(../images/hero-ellipse-desctop-1x-min.png);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (-moz-min-device-pixel-ratio: 2),
+          screen and (-o-min-device-pixel-ratio: 2 / 1) {
+          background-image: url(../images/hero-ellipse-desctop-2x-min.png);
+          }
       }
       }
+}
+@media screen and (min-device-pixel-ratio: 2),
+screen and (-moz-min-device-pixel-ratio: 2),
+screen and (-o-min-device-pixel-ratio: 2 / 1) {
+.main-hero__text::after{
+    background-image: url(../images/hero-ellipse-tab-2x-min.png);
+    @include desk {
+      background-image: url(../images/hero-ellipse-desctop-2x-min.png);
+    }
+}
 }
 .main-hero__text-color {
   display: block;
@@ -173,7 +197,12 @@
         margin-top: 20px;
       }
 }
-
+.main-hero__milk {
+  @include desk {
+    // width: 213px;
+    // height: 216px;
+  }
+}
 .main-hero__icecream {
   position: absolute;
   right: 0;
@@ -181,9 +210,15 @@
   z-index: -1;
 
   @include tab {
+    width: 335px;
+    height: 373px;
     right: 50%;
     bottom: 50%;
     transform: translate(50%, 50%);
+  }
+  @include desk {
+    width: 534px;
+    height: 611px;
   }
 }
 .main-hero__girl{
@@ -195,6 +230,8 @@
   right: 0;
   }
   @include desk {
+    // width: 304px;
+    // height: 241px;
     bottom: -60px;
   }
 }
