@@ -29,9 +29,9 @@
     right: 229px;
   }
 }
-.main-hero__icecream {
-  overflow: hidden;
-}
+// .main-hero__icecream {
+//   overflow: hidden;
+// }
 // .main-hero__icecream {
   // position: relative;
 // }
@@ -43,6 +43,7 @@
   // z-index: -2;
 // }
 .main-hero__icecream-ellipse {
+  // overflow: hidden;
   @include tab {
     width: 335px;
     height: 333px;
