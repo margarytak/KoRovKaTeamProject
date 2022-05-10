@@ -12,27 +12,21 @@
     padding-bottom: 60px;
   }
 }
-.main-hero__icecream-ellipse {
-  @include tab {
-    // width: 335px;
-    // height: 333px;
-  }
-}
 .main-hero__ice {
   position: absolute;
   top: -111px;
   right: -36px;
   z-index: -1;
   @include tab {
-    top: -43px;
-    right: 240px;
+    top: -53px;
+    right: 189px;
     // top: -100%;
     // right: -100%;
     // transform: translate(-50%, -50%);
   }
   @include desk {
-    top: -76px;
-    right: 517px;
+    top: -90px;
+    right: 229px;
   }
 }
 
@@ -46,7 +40,16 @@
   // transform: translate(50%, 50%);
   // z-index: -2;
 // }
-
+.main-hero__icecream-ellipse {
+  @include tab {
+    width: 335px;
+    height: 333px;
+  }
+  @include desk {
+    width: 534px;
+    height: 534px;
+  }
+}
 .main-hero__icecream-ice {
   position: absolute;
   top: 9px;
@@ -56,12 +59,14 @@
   // transform: translate(50%, 50%);
   // z-index: -1;
 @include tab {
-  // width: 143px;
-  // height: 336px;
+  width: 143px;
+  height: 336px;
   top: 37px;
   left: 74px;
 }
 @include desk {
+  width: 236px;
+  height: 557px;
   top: 54px;
   left: 119px;
 }
