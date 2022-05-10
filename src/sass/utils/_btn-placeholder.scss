@@ -4,7 +4,11 @@
   border: none;
   cursor: pointer;
   color: $text-white;
-  background: $main-btn;
+  background-color: $main-btn;
+  &:hover,
+  &:focus {
+    background-color: $main-btn-hover;
+  }
 }
 %btn-reverse {
   font-family: 'DM Sans';
@@ -13,4 +17,8 @@
   cursor: pointer;
   color: $text-main;
   background-color: $secondary-btn;
+  &:hover,
+    &:focus {
+      background-color: $secondary-btn-hover;
+    }
 }
