@@ -12,11 +12,11 @@
 @import './components/container';
 @import './components/section';
 
-@import './components/main-hero.scss';
-@import './components/reviews.scss';
+@import './components/main-hero';
+@import './components/products';
+@import './components/reviews';
 @import './components/advantages';
-@import './components/reviews.scss';
-@import './components/gallery.scss';
+@import './components/gallery';
 @import './components/contacts';
-
-
+@import './components/main-footer';
+@import './components/modal'
