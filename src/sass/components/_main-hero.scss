@@ -18,11 +18,11 @@
   right: -36px;
   z-index: -1;
   @include tab {
-    top: -53px;
-    right: 189px;
-    // top: -100%;
-    // right: -100%;
-    // transform: translate(-50%, -50%);
+  top: -53px;
+  right: 189px;
+  // top: -100%;
+  // right: -100%;
+  // transform: translate(-50%, -50%);
   }
   @include desk {
     top: -90px;
