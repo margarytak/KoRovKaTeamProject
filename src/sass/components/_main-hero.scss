@@ -29,9 +29,11 @@
     right: 229px;
   }
 }
-// .main-hero__icecream {
-//   overflow: hidden;
-// }
+.main-hero__icecream {
+  // max-width: 100vmax;
+  // overflow: hidden;
+  // clip: rect(0 100%vh 0 0)
+}
 // .main-hero__icecream {
   // position: relative;
 // }
@@ -44,6 +46,8 @@
 // }
 .main-hero__icecream-ellipse {
   // overflow: hidden;
+  // position: relative;
+ 
   @include tab {
     width: 335px;
     height: 333px;
