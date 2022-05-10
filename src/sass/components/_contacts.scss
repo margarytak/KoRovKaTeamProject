@@ -89,6 +89,9 @@ transform: scale(1.05);
                 &:not(:last-child) {
                         padding-bottom: 32px;
                     }
+                     &:first-child {
+                      padding-top: 32px;
+                     }
              }
             
             }
