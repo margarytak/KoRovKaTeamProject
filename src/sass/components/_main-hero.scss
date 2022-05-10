@@ -135,18 +135,28 @@
 }
 .main-hero__btn-product {
   @extend %btn;
-  padding: 11px;
+  padding: 10px 14px;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25px;
   margin-right: 8px;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29px;
+    padding: 14px 24px;
+  }
 }
 .main-hero__btn-made {
   @extend %btn-reverse;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25px;
-  padding: 11px;
+  padding: 9px 13px;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29px;
+    padding: 14px 20px;
+    }
 }
 .main-hero__content {
   display: flex;
@@ -252,17 +262,19 @@ screen and (-o-min-device-pixel-ratio: 2 / 1) {
 .main-hero__btn-modal {
   display: none;
     @include tab {
-      width: 100%;
-      height: 100%;
       margin-top: 3px;
-        display: block;
+        display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 18px;
+          height: 18px;
           border: none;
             border-radius: 50%;
             background-color: #fff;
       }
       @include desk {
-        // width: 26px;
-        // height: 26px;
+        width: 26px;
+        height: 26px;
         margin-top: 19px;
       }
 }
