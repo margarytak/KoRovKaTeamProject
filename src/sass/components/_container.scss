@@ -2,9 +2,8 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  min-width: 320px;
   @include mob {
-    width: 320px;
+    width: 480px;
   }
   @include tab {
     width: 768px;
