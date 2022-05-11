@@ -10,7 +10,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   pointer-events: auto;
   z-index: 50;
-  transition: opacity $ainim-fast, visibility $ainim-fast;
+  transition: opacity $anim-fast, visibility $anim-fast;
 }
 .modal {
   opacity: 0;
@@ -27,7 +27,7 @@
     border-radius: 50%;
     background-color: $bcg-light;
     color: $main-btn;
-    transition: color $ainim-fast;
+    transition: color $anim-fast;
     & .icon {
       fill: currentColor;
     }
@@ -49,7 +49,7 @@
   border-radius: 24px;
   z-index: 70;
   transform: translate(100vw, 100vh);
-  transition: transform $ainim-fast, opacity $ainim-fast, visibility $ainim-fast;
+  transition: transform $anim-fast, opacity $anim-fast, visibility $anim-fast;
   @media (max-width: 479px) {
     width: 100%;
   }
@@ -98,7 +98,7 @@
   border-radius: 24px;
   z-index: 70;
   transform: translate(100vw, 100vh);
-  transition: transform $ainim-fast, opacity $ainim-fast, visibility $ainim-fast;
+  transition: transform $anim-fast, opacity $anim-fast, visibility $anim-fast;
   @media (max-width: 479px) {
     width: 100%;
   }
@@ -154,7 +154,7 @@
   border-radius: 24px;
   z-index: 70;
   transform: translate(100vw, 100vh);
-  transition: transform $ainim-fast, opacity $ainim-fast, visibility $ainim-fast;
+  transition: transform $anim-fast, opacity $anim-fast, visibility $anim-fast;
   @media (max-width: 479px) {
     width: 100%;
   }
@@ -194,14 +194,14 @@
   top: 50%;
   left: 50%;
   min-width: 320px;
-  padding: 30px 15px 15px 15px;
+  padding: 30px 40px 15px 40px;
   background-color: #fff5f6;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 24px;
   z-index: 70;
   transform: translate(100vw, 0vh);
-  transition: transform $ainim-fast, opacity $ainim-fast, visibility $ainim-fast;
+  transition: transform $anim-fast, opacity $anim-fast, visibility $anim-fast;
   @media (max-width: 479px) {
     width: 100%;
   }
@@ -225,6 +225,29 @@
     letter-spacing: 0.04em;
     color: $text-muted;
   }
+  &__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid $bcg-mob-menu;
+    box-sizing: border-box;
+    padding-left: 42px;
+    border-radius: 12px;
+    outline: none;
+    transition: border $anim-fast, color $anim-fast;
+    &-box {
+      position: relative;
+      & .icon {
+        position: absolute;
+        top: 11px;
+        left: 12px;
+        fill: currentColor;
+      }
+    }
+    &:focus {
+      color: $accent-hover;
+      border: 1px solid $accent-hover;
+    }
+  }
 }
 .overlay.active,
 .modal.active {
@@ -241,7 +264,7 @@
 //   line-height: 1.31;
 //   display: flex;
 //   align-items: baseline;
-//   transition: background-color $ainim-fast;
+//   transition: background-color $anim-fast;
 //   & .icon {
 //     fill: currentColor;
 //     margin-left: 13.5px;
@@ -261,7 +284,7 @@
 // //   line-height: 1.31;
 // //   display: flex;
 // //   align-items: baseline;
-// //   transition: background-color $ainim-fast;
+// //   transition: background-color $anim-fast;
 // //   & .icon {
 // //     fill: #ffff;
 // //     margin-left: 13.5px;
@@ -281,7 +304,7 @@
 //   line-height: 1.31;
 //   display: flex;
 //   align-items: baseline;
-//   transition: background-color $ainim-fast;
+//   transition: background-color $anim-fast;
 //   & .icon {
 //     fill: currentColor;
 //     margin-left: 13.5px;
