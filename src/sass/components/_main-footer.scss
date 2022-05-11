@@ -1,0 +1,86 @@
+.foot {
+  background-color: $bcg-light;
+}
+
+.foot__slogan {
+  margin-bottom: 40px;
+}
+.foot__ice-cream {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+
+  color: $text-secondary;
+}
+.foot__passion {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+
+  color: $text-main;
+}
+.socials {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-bottom: 40px;
+}
+.socials__link {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $text-white;
+  background-color: $bcg-icon;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-hover;
+  }
+}
+.socials__icon {
+  fill: currentColor;
+}
+.socials__item {
+  & + & {
+    margin-left: 28px;
+  }
+}
+.foot__address {
+  margin-bottom: 40px;
+
+
+
+  font-style: normal;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+}
+.foot__contact {
+  color: $text-dark;
+}
+
+.foot__link {
+  font-weight: 500;
+
+  color: $text-main;
+}
+.foot__wrap-copyright {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(31, 29, 29);
+  // тут цвет для видимости линии,будет rgba(225, 225, 225, 1)
+}
+
