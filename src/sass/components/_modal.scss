@@ -9,7 +9,7 @@
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.2);
   pointer-events: auto;
-  z-index: 10;
+  z-index: 50;
   transition: opacity $ainim-fast, visibility $ainim-fast;
 }
 .modal {
@@ -27,8 +27,13 @@
     border-radius: 50%;
     background-color: $bcg-light;
     color: $main-btn;
+    transition: color $ainim-fast;
     & .icon {
       fill: currentColor;
+    }
+    &:hover,
+    &:focus {
+      color: $text-secondary;
     }
   }
 }
@@ -42,7 +47,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 24px;
-  z-index: 20;
+  z-index: 70;
   transform: translate(100vw, 100vh);
   transition: transform $ainim-fast, opacity $ainim-fast, visibility $ainim-fast;
   @media (max-width: 479px) {
@@ -91,7 +96,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 24px;
-  z-index: 20;
+  z-index: 70;
   transform: translate(100vw, 100vh);
   transition: transform $ainim-fast, opacity $ainim-fast, visibility $ainim-fast;
   @media (max-width: 479px) {
@@ -147,7 +152,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 24px;
-  z-index: 20;
+  z-index: 70;
   transform: translate(100vw, 100vh);
   transition: transform $ainim-fast, opacity $ainim-fast, visibility $ainim-fast;
   @media (max-width: 479px) {
@@ -194,7 +199,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 24px;
-  z-index: 20;
+  z-index: 70;
   transform: translate(100vw, 0vh);
   transition: transform $ainim-fast, opacity $ainim-fast, visibility $ainim-fast;
   @media (max-width: 479px) {
@@ -206,8 +211,19 @@
   @media (min-width: 768px) {
     width: 590px;
   }
+
   &.active {
     transform: translate(-50%, -50%);
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    color: $text-muted;
   }
 }
 .overlay.active,
