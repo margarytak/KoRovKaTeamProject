@@ -106,7 +106,7 @@
       </div>
     </div>
     <div class="main-hero__content">
-      <h1 class="main-hero__header" >
+      <h1 class="main-hero__header">
         ice cream <br />
         made with<br />
         <span class="main-hero__header-accent">passion</span>
@@ -127,13 +127,19 @@
         <button
           class="btn main-hero__btn-product"
           type="button"
-          onclick="document.location='#products'"
+          onclick="document.location='#header-our-products'"
         >
           Products
         </button>
       </li>
       <li>
-        <button class="btn-reverse main-hero__btn-made" type="button">How it&#xB4;s made?</button>
+        <button
+          class="btn-reverse main-hero__btn-made"
+          type="button"
+          onclick="document.location='#header-how-made'"
+        >
+          How it&#xB4;s made?
+        </button>
       </li>
     </ul>
     <div class="main-hero__bottom">
@@ -173,11 +179,11 @@
         </p>
         <button
           class="main-hero__btn-modal js-open-modal"
-          data-modal="4"
+          data-modal="5"
           type="button"
           aria-label="кнопка открытия модального окна"
         >
-          <svg width="6" height="6">
+          <svg class="main-hero__btn-icon" width="6" height="6">
             <use href="./images/icons.svg#icon-arrow-right-solid"></use>
           </svg>
         </button>

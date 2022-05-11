@@ -181,6 +181,9 @@
       font-size: 14px;
       line-height: 1.83;
     }
+    @include desk {
+      font-size: 16px;
+    }
   }
   &__btn-location {
     display: flex;

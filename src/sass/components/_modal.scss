@@ -64,14 +64,15 @@
     transform: translate(-50%, -50%) scale(1);
   }
   &__title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1.13;
-    text-align: center;
-    letter-spacing: 0.04em;
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 22px;
     text-transform: uppercase;
-    color: $main-btn;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    color: $text-main;
     margin-bottom: 30px;
+    text-align: center;
   }
   &__text {
     font-weight: 500;
@@ -117,14 +118,15 @@
     transform: translate(-50%, -50%) scale(1);
   }
   &__title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1.13;
-    text-align: center;
-    letter-spacing: 0.04em;
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 22px;
     text-transform: uppercase;
-    color: $main-btn;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    color: $text-main;
     margin-bottom: 30px;
+    text-align: center;
   }
   &__map {
     width: 100%;
@@ -206,14 +208,15 @@
     transform: translate(-50%, -50%) scale(1);
   }
   &__title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1.13;
-    text-align: center;
-    letter-spacing: 0.04em;
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 22px;
     text-transform: uppercase;
-    color: $main-btn;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    color: $text-main;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__label {
     display: flex;
@@ -358,25 +361,27 @@
   top: 50%;
   left: 50%;
   min-width: 320px;
-  padding: 30px 20px 20px 20px;
-  background-color: #fff5f6;
+  padding: 30px 40px 15px 40px;
+  background-color: $text-white;
+  border: 2px solid $bcg-mob-menu;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 24px;
-  z-index: 20;
-  transform: translate(100vw 100vh);
+  z-index: 70;
+  transform: translate(-50%, -50%) scale(0);
   transition: transform $anim-fast, opacity $anim-fast, visibility $anim-fast;
-
   @media (max-width: 479px) {
-    width: 100%;
+    width: 100vw;
   }
-
   @media (min-width: 480px) {
     width: 480px;
   }
-
   @media (min-width: 768px) {
     width: 590px;
+  }
+
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
   }
 
   &__title {
