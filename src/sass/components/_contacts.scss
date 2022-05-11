@@ -24,7 +24,7 @@ margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
 
-    transition-duration: 500ms;
+    transition-duration: 700ms;
     transition: background-color $ainim-fast, transform $ainim-fast;
 
     @media screen and (max-width: 767px){
@@ -44,8 +44,8 @@ margin-bottom: 32px;
         padding: 40px;
         margin-bottom: 0px;
     }
-    &:hover{
-// background-color: #fbf1f3;
+    &:hover,&:focus{
+border: 2px dashed $main-btn;
 transform: scale(1.05);
     }
 
@@ -192,11 +192,11 @@ transform: scale(1.05);
                 }
        }
     &__btn{
-        
+        display: flex;
         text-align: center;
         justify-content: center;
         @media screen and (max-width: 767px){
-            display: flex;
+            
             flex-direction: column;
             align-items: center;
 
@@ -206,6 +206,7 @@ transform: scale(1.05);
     &__btn-icon{
         
         margin-left: 9px;
+        align-items: center;
         
     }
 
@@ -215,12 +216,15 @@ transform: scale(1.05);
 
 
     &__btn-location{
+        display: flex;
+        align-items: center;
         
         @media screen and (max-width: 767px){
             margin-bottom: 10px;
             margin-right: 0px;
             padding: 14px 17px;
             width: 162px;
+            justify-content: center;
         }
         @extend %btn;
         padding: 14px 35px;
@@ -234,15 +238,17 @@ transform: scale(1.05);
 
              transition:background-color $ainim-fast,
              box-shadow $ainim-fast ;
-            &:hover{
+            &:hover, &:focus{
                background-color: $main-btn-hover;
             box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
             }
             
     }
     &__btn-franchise{
+        display: flex;
+            align-items: center;
         @media screen and (max-width: 767px) {
-                
+                justify-content: center;
                 padding: 14px 17px;
                 width: 162px;
             }
@@ -257,7 +263,7 @@ transform: scale(1.05);
 
             transition:background-color $ainim-fast, box-shadow $ainim-fast ;
 
-            &:hover{
+            &:hover, &:focus{
                 background-color:$secondary-btn-hover;
                 box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
             }
@@ -291,7 +297,7 @@ border-bottom: 1px solid #E1E1E1;
                         padding-bottom: 60px;
                     }
 }
-.contacts__item:hover .contacts__link{
+.contacts__item:hover .contacts__link, .contacts__item:focus .contacts__link{
     color: $text-main;
     font-size: 16px;
 }
@@ -299,6 +305,4 @@ border-bottom: 1px solid #E1E1E1;
 
 
 
-// Юлия Ораз20:55 https: //prnt.sc/9pZSql0PzE5I
-// https: //prnt.sc/oI4V3BsTLOuW
 
