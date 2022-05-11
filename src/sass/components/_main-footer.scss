@@ -10,8 +10,8 @@
 }
 .foot__container {
   @include tab {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 }
 .foot__slogan {
@@ -36,11 +36,11 @@
   line-height: 1.15;
   @include tab {
     font-size: 26px;
-  line-height: 1.15;
+    line-height: 1.15;
   }
   @include desk {
     font-size: 30px;
-  line-height: 1.15;
+    line-height: 1.15;
   }
 
   color: $text-secondary;
@@ -50,7 +50,7 @@
   @include tab {
     width: 340px;
   }
-  @include desk{
+  @include desk {
     width: 474px;
   }
   text-transform: uppercase;
@@ -61,11 +61,11 @@
   letter-spacing: 0.04em;
   @include tab {
     font-size: 48px;
-  line-height: 1.15;
+    line-height: 1.15;
   }
   @include desk {
     font-size: 58px;
-  line-height: 1.15;
+    line-height: 1.15;
   }
 
   color: $text-main;
@@ -92,7 +92,7 @@
   color: $text-white;
   background-color: $bcg-icon;
 
-  transition: background-color $ainim-fast;
+  transition: background-color $anim-fast;
 
   &:hover,
   &:focus {
@@ -125,11 +125,11 @@
   line-height: 1.86;
   @include tab {
     font-size: 14px;
-  line-height: 1.86;
+    line-height: 1.86;
   }
   @include desk {
     font-size: 16px;
-  line-height: 1.86;
+    line-height: 1.86;
   }
 }
 .foot__contact {

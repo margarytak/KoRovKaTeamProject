@@ -1,6 +1,5 @@
 .contacts {
   margin-bottom: 32px;
-
   @include tab {
     display: flex;
     gap: 32px;
@@ -9,21 +8,16 @@
   @include desk {
     margin-bottom: 60px;
   }
-
   &__item {
     width: 280px;
     background-color: $text-white;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px;
-
     margin-left: auto;
     margin-right: auto;
-
-
     transition-duration: 700ms;
-    transition: background-color $ainim-fast, transform $ainim-fast;
-
+    transition: background-color $anim-fast, transform $anim-fast;
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 20px;
@@ -40,12 +34,12 @@
       padding: 40px;
       margin-bottom: 0px;
     }
-    &:hover,&:focus{
-border: 2px dashed $main-btn;
-transform: scale(1.05);
+    &:hover,
+    &:focus {
+      border: 2px dashed $main-btn;
+      transform: scale(1.05);
     }
   }
-
   &__item-name {
     @media screen and (max-width: 767px) {
       font-size: 12px;
@@ -58,9 +52,7 @@ transform: scale(1.05);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.86;
-
     letter-spacing: 0.04em;
-
     color: $text-white;
     background-color: #f0d1a5;
     border-radius: 6px;
@@ -69,7 +61,6 @@ transform: scale(1.05);
   }
   &__wrap {
     padding-top: 24px;
-
     &:not(:last-child) {
       padding-bottom: 24px;
     }
@@ -86,7 +77,6 @@ transform: scale(1.05);
       }
     }
   }
-
   &__place-town {
     font-style: normal;
     font-weight: 500;
@@ -94,7 +84,6 @@ transform: scale(1.05);
     line-height: 1.86;
     letter-spacing: 0.04em;
     color: $text-dark;
-
     display: block;
     margin-bottom: 8px;
     @include tab {
@@ -112,19 +101,16 @@ transform: scale(1.05);
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
     color: $text-muted;
     @include tab {
       font-size: 14px;
       line-height: 1.66;
     }
-
     @include desk {
       font-size: 16px;
       line-height: 1.83;
     }
   }
-
   &__timetable-wrap {
     margin-bottom: 8px;
     @include tab {
@@ -138,43 +124,51 @@ transform: scale(1.05);
     line-height: 1.86;
     letter-spacing: 0.04em;
     color: $text-dark;
-
     display: block;
     @include tab {
       font-size: 14px;
     }
-            transition: color $ainim-fast, font-size $ainim-fast;
-            @include tab {
-                    font-size: 14px;
-                    line-height: 1.83;
-                }
-            
-                @include desk {
-                    font-size: 16px;
-                }
-       }
-    &__btn{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        @media screen and (max-width: 767px){
-            
-            flex-direction: column;
-            align-items: center;
-
-        }
-        
+    transition: color $anim-fast, font-size $anim-fast;
+    @include tab {
+      font-size: 14px;
+      line-height: 1.83;
     }
-    &__btn-icon{
-        
-        margin-left: 9px;
-        align-items: center;
-        
+    @include desk {
+      font-size: 16px;
+    }
+  }
+  &__timetable-time {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: $text-secondary;
+    @include tab {
+      font-size: 14px;
     }
 
     @include desk {
       font-size: 16px;
     }
+  }
+  &__btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__btn-icon {
+    margin-left: 9px;
+    align-items: center;
+    @include desk {
+      font-size: 16px;
+    }
+  }
+  &__btn-icon-rev {
+    margin-left: 9px;
   }
   &__link {
     font-style: normal;
@@ -182,62 +176,57 @@ transform: scale(1.05);
     font-size: 12px;
     line-height: 1.5;
     color: $text-muted;
-
     transition: color $anim-fast, font-size $anim-fast;
     @include tab {
       font-size: 14px;
       line-height: 1.83;
     }
-
-
-    &__btn-location{
-        display: flex;
-        align-items: center;
-        
-        @media screen and (max-width: 767px){
-            margin-bottom: 10px;
-            margin-right: 0px;
-            padding: 14px 17px;
-            width: 162px;
-            justify-content: center;
-        }
-        @extend %btn;
-        padding: 14px 35px;
-        margin-right: 15px;
-        border-radius: 22px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-             transition:background-color $ainim-fast,
-             box-shadow $ainim-fast ;
-            &:hover, &:focus{
-               background-color: $main-btn-hover;
-            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
-            }
-            
+  }
+  &__btn-location {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+      margin-right: 0px;
+      padding: 14px 17px;
+      width: 162px;
+      justify-content: center;
     }
-    &__btn-franchise{
-        display: flex;
-            align-items: center;
-        @media screen and (max-width: 767px) {
-                justify-content: center;
-                padding: 14px 17px;
-                width: 162px;
-            }
-        @extend %btn-reverse;
-        padding: 14px 39px ;
-        border-radius: 22px;
+    @extend %btn;
+    padding: 14px 35px;
+    margin-right: 15px;
+    border-radius: 22px;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     transition: background-color $anim-fast, box-shadow $anim-fast;
-            &:hover, &:focus{
-                background-color:$secondary-btn-hover;
-                box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
-            }
+    &:hover,
+    &:focus {
+      background-color: $main-btn-hover;
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
+    }
+  }
+  &__btn-franchise {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+      padding: 14px 17px;
+      width: 162px;
+    }
+    @extend %btn-reverse;
+    padding: 14px 39px;
+    border-radius: 22px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    transition: background-color $anim-fast, box-shadow $anim-fast;
+    &:hover,
+    &:focus {
+      background-color: $secondary-btn-hover;
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
     }
   }
 }
@@ -252,7 +241,6 @@ transform: scale(1.05);
 }
 .contact {
   background-image: linear-gradient(to bottom, $text-white 21%, $bcg-light 21%, $bcg-light 87%);
-
   padding-top: 24px;
   padding-bottom: 24px;
   @include tab {
@@ -265,8 +253,8 @@ transform: scale(1.05);
   }
 }
 
-.contacts__item:hover .contacts__link, .contacts__item:focus .contacts__link{
-    color: $text-main;
-    font-size: 16px;
+.contacts__item:hover .contacts__link,
+.contacts__item:focus .contacts__link {
+  color: $text-main;
+  font-size: 16px;
 }
-
