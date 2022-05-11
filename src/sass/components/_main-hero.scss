@@ -14,7 +14,7 @@
 }
 .main-hero__ice {
   position: absolute;
-  clip: rect(0px, 290px, 1000px, 0px);
+  // clip: rect(0px, 290px, 1000px, 0px);
   // clip: rect(0 100vh 0 0);
   top: -111px;
   right: -56px;
@@ -23,7 +23,7 @@
     // clip: rect(0px, 290px, 1000px, 0px);
   // }
   @include tab {
-    clip: rect(auto auto auto auto);
+    // clip: rect(auto auto auto auto);
   top: -53px;
   right: 189px;
   // top: -100%;
