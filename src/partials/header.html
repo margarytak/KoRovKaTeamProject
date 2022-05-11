@@ -1,7 +1,6 @@
-<header class="header  " id="header-home">
+
+<header class="header" id="header-home">
     <div class="header__container container">
-    
-      
       <nav class="main-nav" >
         <a href="/" class="header__logo" >
             <picture >
@@ -21,29 +20,34 @@
           <li class="site-nav__item"><a href="#header-our-products">Our products</a></li>
           <li class="site-nav__item"><a href="#header-contacts">Contact</a></li>
       </ul>
-      
+
       <button type="button" class="mob-menu-btn" data-menu-button>
-          <svg class="mob-menu-btn__icon" width="20" height="12" aria-label="переключатель мобильного меню">
-             <use class="mob-menu-btn__icon--open" href="/images/icons.svg#icon-menu-gamburg"></use>
-             <use class="mob-menu-btn__icon--close" href="/images/icons.svg#icon-close1"></use>
-          </svg>
+        <svg
+          class="mob-menu-btn__icon"
+          width="20"
+          height="12"
+          aria-label="переключатель мобильного меню"
+        >
+          <use class="mob-menu-btn__icon--open" href="/images/icons.svg#icon-menu-gamburg"></use>
+          <use class="mob-menu-btn__icon--close" href="/images/icons.svg#icon-close1"></use>
+        </svg>
       </button>
-      <button class="header__button " type="button">Buy now
-          <svg class="header__button--svg" width="6px" height="10px">
-              <use href="/images/icons.svg#icon-vector-button" ></use>
-          </svg>
+      <button class="header__button js-open-modal" type="button" data-modal="4">
+        Buy now
+        <svg class="header__button--svg" width="6px" height="10px">
+          <use href="/images/icons.svg#icon-vector-button"></use>
+        </svg>
       </button>
     </nav>
-</div>
+  </div>
 
-<div class="mob-menu" data-menu>
+  <div class="mob-menu" data-menu>
     <div class="mob-menu__container">
-        <button class="mob-menu__main-button " type="button">Buy now
+        <button class="mob-menu__main-button js-open-modal" type="button" data-modal="4">Buy now
             <svg class="mob-menu__main-button--svg" width="6px" height="10px">
                       <use href="/images/icons.svg#icon-vector-button"></use>
                   </svg>
         </button>
-
         <ul class="mobile-menu__list ">
             <li class="mob-menu__item mob-menu__current"><a href="#header-home">Home</a></li>
             <li class="mob-menu__item"><a href="#header-about-us">About us</a></li>
@@ -51,10 +55,6 @@
             <li class="mob-menu__item"><a href="#header-our-products">Our products</a></li>
             <li class="mob-menu__item"><a href="#header-contacts">Contact</a></li>
         </ul>
-
-
-
     </div>
-    </div>
-    
+  </div>
 </header>

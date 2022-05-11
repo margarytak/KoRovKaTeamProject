@@ -15,10 +15,16 @@
 }
 .main-hero__ice {
   position: absolute;
+  // clip: rect(0px, 290px, 1000px, 0px);
+  // clip: rect(0 100vh 0 0);
   top: -111px;
-  right: -36px;
+  right: -56px;
   z-index: -1;
+  // @media screen and (min-width: 320px) and (min-width: 767px) {
+    // clip: rect(0px, 290px, 1000px, 0px);
+  // }
   @include tab {
+    // clip: rect(auto auto auto auto);
   top: -53px;
   right: 189px;
   // top: -100%;
@@ -30,9 +36,13 @@
     right: 229px;
   }
 }
-// .main-hero__icecream {
-//   overflow: hidden;
-// }
+.main-hero__icecream {
+  // max-width: 100vmax;
+  // width: 100vw;
+  // width: 100vw;
+  // overflow: hidden;
+  // clip: rect(0 100%vh 0 0)
+}
 // .main-hero__icecream {
   // position: relative;
 // }
@@ -45,6 +55,11 @@
 // }
 .main-hero__icecream-ellipse {
   // overflow: hidden;
+  // position: relative;
+  // max-width: 100%;
+  
+
+ 
   @include tab {
     width: 335px;
     height: 333px;
@@ -57,7 +72,7 @@
 .main-hero__icecream-ice {
   position: absolute;
   top: 9px;
-  left: 81px;
+  left: 83px;
   // left: 0;
   // top: 0;
   // transform: translate(50%, 50%);
@@ -197,11 +212,17 @@
       display: block;
             width: 16px;
               height: 16px;
-      background-image: url(../images/hero-ellipse-tab-min.png);
+      background-image: url(../images/hero-ellipse-tab-1x-min.png);
+      background-image: -webkit-image-set(url(../images/hero-ellipse-tab-1x-min.webp) 1x);
+      
       @media screen and (min-device-pixel-ratio: 2),
         screen and (-moz-min-device-pixel-ratio: 2),
-        screen and (-o-min-device-pixel-ratio: 2 / 1) {
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
         background-image: url(../images/hero-ellipse-tab-2x-min.png);
+        background-image: -webkit-image-set(url(../images/hero-ellipse-tab-2x-min.webp) 2x);
         }
       background-size: contain;
       background-repeat: no-repeat;
@@ -216,12 +237,18 @@
         top: -7px;
         right: -15px;
         background-image: url(../images/hero-ellipse-desctop-1x-min.png);
+        background-image: -webkit-image-set(url(../images/hero-ellipse-desc-1x-min.webp) 1x);
+              
         @media screen and (min-device-pixel-ratio: 2),
-          screen and (-moz-min-device-pixel-ratio: 2),
-          screen and (-o-min-device-pixel-ratio: 2 / 1) {
+        screen and (-moz-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
           background-image: url(../images/hero-ellipse-desctop-2x-min.png);
-          }
-      }
+          background-image: -webkit-image-set(url(../images/hero-ellipse-desc-2x-min.webp) 2x);
+        }
+        }
       }
 }
 @media screen and (min-device-pixel-ratio: 2),
@@ -267,14 +294,15 @@ screen and (-o-min-device-pixel-ratio: 2 / 1) {
   display: none;
     @include tab {
       margin-top: 3px;
-        display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 18px;
-          height: 18px;
-          border: none;
-            border-radius: 50%;
-            background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: #fff;
       }
       @include desk {
         width: 26px;
