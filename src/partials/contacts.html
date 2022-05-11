@@ -2,7 +2,7 @@
 <section class="section contact">
 
 <div class="container "> 
-    <h2 class="visually-hidden">Contacts</h2>
+    <h2 class="visually-hidden " id="header-contacts" >Contacts</h2>
     <ul class="contacts">
         <li class="contacts__item">
             <p class="contacts__item-name">CAFE</p>
@@ -82,8 +82,17 @@
         </li>
     </ul>
     <div class="contacts__btn">
-        <button type="button" class="contacts__btn-location">Our Locations....></button>
-        <button type="button" class="contacts__btn-franchise">Franchise....></button>
+        <button type="button" class="contacts__btn-location js-open-modal" data-modal="2">Our Locations 
+            <svg class="contacts__btn-icon" width="8px" height="11px"  >
+
+                <use href="/images/icons.svg#icon-Vector-button-white"></use>
+            </svg>
+        </button>
+        <button type="button" class="contacts__btn-franchise js-open-modal" data-modal="3">Franchise
+            <svg class="contacts__btn-icon-rev" width="7px" height="10px">
+                <use href="/images/icons.svg#icon-vector-button"></use>
+            </svg>
+        </button>
     </div>
 </div>
 </section>

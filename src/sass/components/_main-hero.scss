@@ -1,6 +1,110 @@
 .main-hero__container {
-  width: 100%;
+  // position: relative;
   background-color: $bcg-dark;
+  padding-top: 136px;
+
+  background-image: -moz-element();
+  @include tab {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @include desk {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.main-hero__ice {
+  position: absolute;
+  // clip: rect(0px, 290px, 1000px, 0px);
+  // clip: rect(0 100vh 0 0);
+  top: -111px;
+  right: -56px;
+  z-index: -1;
+  // @media screen and (min-width: 320px) and (min-width: 767px) {
+  // clip: rect(0px, 290px, 1000px, 0px);
+  // }
+  @include tab {
+    // clip: rect(auto auto auto auto);
+    top: -53px;
+    right: 189px;
+    // top: -100%;
+    // right: -100%;
+    // transform: translate(-50%, -50%);
+  }
+  @include desk {
+    top: -75px;
+    right: 229px;
+  }
+}
+// .main-hero__icecream {
+//   // max-width: 100vmax;
+//   // width: 100vw;
+//   // width: 100vw;
+//   // overflow: hidden;
+//   // clip: rect(0 100%vh 0 0)
+// }
+// .main-hero__icecream {
+// position: relative;
+// }
+// .main-hero__icecream-ellipse {
+// position: relative;
+// left: 0;
+// top: 0;
+// transform: translate(50%, 50%);
+// z-index: -2;
+// }
+.main-hero__icecream-ellipse {
+  // overflow: hidden;
+  // position: relative;
+  // max-width: 100%;
+
+  @include tab {
+    width: 335px;
+    height: 333px;
+  }
+  @include desk {
+    width: 534px;
+    height: 534px;
+  }
+}
+.main-hero__icecream-ice {
+  position: absolute;
+  top: 9px;
+  left: 83px;
+  // left: 0;
+  // top: 0;
+  // transform: translate(50%, 50%);
+  // z-index: -1;
+  @include tab {
+    width: 143px;
+    height: 336px;
+    top: 37px;
+    left: 74px;
+  }
+  @include desk {
+    width: 236px;
+    height: 557px;
+    top: 54px;
+    left: 119px;
+  }
+  // @include tab {
+  //   // width: 335px;
+  //   // height: 373px;
+  //   right: 50%;
+  //   bottom: 50%;
+  //   transform: translate(50%, 50%);
+  // }
+
+  // @include desk {
+  // width: 534px;
+  // height: 611px;
+  // }
+}
+.main-hero__container-position {
+  @extend .container;
+  position: relative;
+  z-index: 10;
+  // margin-left: 20px;
 }
 .main-hero__header {
   font-family: 'Titan One';
@@ -10,38 +114,234 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $text-white;
+  @include tab {
+    font-size: 22px;
+    line-height: 1.14;
+  }
+  @include desk {
+    font-size: 38px;
+    line-height: 1.16;
+  }
 }
 .main-hero__header-accent {
   font-size: 48px;
   line-height: 0.96;
   color: $text-main;
+  @include tab {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+  @include desk {
+    font-size: 58px;
+    line-height: 0.9;
+  }
+}
+.main-hero__list {
+  padding-bottom: 158px;
+  display: flex;
+  margin-top: 20px;
+  @include tab {
+    padding-bottom: 0;
+    margin-top: 7px;
+    margin-bottom: 20px;
+  }
+  @include desk {
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
 }
 .main-hero__btn-product {
   @extend %btn;
-  padding: 11px;
+  padding: 11px 14px;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25px;
+  margin-right: 8px;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29px;
+    padding: 19px 24px;
+  }
 }
 .main-hero__btn-made {
   @extend %btn-reverse;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25px;
-  padding: 11px;
+  padding: 11px 13px;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29px;
+    padding: 19px 20px;
+  }
+}
+.main-hero__content {
+  display: flex;
+  align-items: center;
 }
 .main-hero__wrapper {
   display: none;
+  @include tab {
+    display: block;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+}
+.main-hero__wrapper-margin {
+  margin-bottom: 16px;
+}
+.main-hero__text {
+  position: relative;
+  display: block;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  @include desk {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/hero-ellipse-tab-1x-min.png);
+    background-image: -webkit-image-set(url(../images/hero-ellipse-tab-1x-min.webp) 1x);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-moz-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/hero-ellipse-tab-2x-min.png);
+      background-image: -webkit-image-set(url(../images/hero-ellipse-tab-2x-min.webp) 2x);
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    // transform: translate(50%, 50%);
+    z-index: -1;
+    @include desk {
+      width: 30px;
+      height: 30px;
+      top: -7px;
+      right: -15px;
+      background-image: url(../images/hero-ellipse-desctop-1x-min.png);
+      background-image: -webkit-image-set(url(../images/hero-ellipse-desc-1x-min.webp) 1x);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-moz-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/hero-ellipse-desctop-2x-min.png);
+        background-image: -webkit-image-set(url(../images/hero-ellipse-desc-2x-min.webp) 2x);
+      }
+    }
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-moz-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2 / 1) {
+  .main-hero__text::after {
+    background-image: url(../images/hero-ellipse-tab-2x-min.png);
+    @include desk {
+      background-image: url(../images/hero-ellipse-desctop-2x-min.png);
+    }
+  }
+}
+.main-hero__text-color {
+  display: block;
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #ffffff;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 .main-hero__title {
   display: none;
+  @include tab {
+    display: block;
+    width: 114px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+  @include desk {
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
 }
 .main-hero__btn-modal {
   display: none;
+  @include tab {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  @include desk {
+    width: 26px;
+    height: 26px;
+    margin-top: 19px;
+  }
+}
+.main-hero__btn-icon {
+  fill: $main-btn;
+}
+.main-hero__bottom {
+  display: none;
+  @include tab {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 .main-hero__milk {
-  display: none;
+  @include desk {
+    // width: 213px;
+    // height: 216px;
+  }
 }
+
 .main-hero__girl {
   display: none;
+  @include tab {
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    right: 15px;
+  }
+  @include desk {
+    // width: 304px;
+    // height: 241px;
+    bottom: -60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-hero__container {
+    overflow: hidden;
+  }
 }

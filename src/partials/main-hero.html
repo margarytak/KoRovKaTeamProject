@@ -1,35 +1,219 @@
-<section class="container main-hero__container">
-  <div>
-    <h1 class="main-hero__header">
-      ice cream <br />
-      made with<br />
-      <span class="main-hero__header-accent">passion</span>
-    </h1>
-    <button class="btn main-hero__btn-product" type="button">Products</button>
-    <button class="btn-reverse main-hero__btn-made" type="button">How it&#xB4;s made?</button>
-    <div class="main-hero__wrapper">
-      <span class="main-hero__text">16<span class="main-hero__text-color">cafes</span></span>
+<section class="main-hero__container">
+  <div class="container main-hero__container-position">
+    <div class="main-hero__ice">
+      <div>
+        <div class="main-hero__icecream">
+          <picture>
+            <source
+              srcset="
+                ./images/hero-ice-ellips-desctop-1x-min.webp 1x,
+                ./images/hero-ice-ellips-desctop-2x-min.webp 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hero-ice-ellips-desk-1x-min.png 1x,
+                ./images/hero-ice-ellips-desk-2x-min.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/hero-ice-ellips-tab-1x-min.webp 1x,
+                ./images/hero-ice-ellips-tab-2x-min.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hero-ice-ellips-tab-1x-min.png 1x,
+                ./images/hero-ice-ellips-tab-2x-min.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/hero-ice-ellips-mob-1x-min.webp 1x,
+                ./images/hero-ice-ellips-mob-2x-min.webp 2x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hero-ice-ellips-mob-1x-min.png 1x,
+                ./images/hero-ice-ellips-mob-2x-min.png 2x
+              "
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="main-hero__icecream-ellipse"
+              src="./images/hero-ice-ellips-mob-1x-min.png"
+              alt=""
+              width="346"
+              height="344"
+            />
+          </picture>
+        </div>
+
+        <div>
+          <picture>
+            <source
+              srcset="./images/hero-ice-desk-1x-min.webp 1x, ./images/hero-ice-desk-2x-min.webp 2x"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/hero-ice-desk-1x-min.png 1x, ./images/hero-ice-desk-2x-min.png 2x"
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/hero-ice-tab-1x-min.webp 1x, ./images/hero-ice-tab-2x-min.webp 2x"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/hero-ice-tab-1x-min.png 1x, ./images/hero-ice-tab-2x-min.png 2x"
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/hero-ice-mob-1x-min.webp 1x, ./images/hero-ice-mob-2x-min.webp 2x"
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/hero-ice-mob-1x-min.png 1x, ./images/hero-ice-mob-2x-min.png 2x"
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="main-hero__icecream-ice"
+              src="./images/hero-ice-mob-1x-min.png"
+              alt=""
+              width="171"
+              height="410"
+            />
+          </picture>
+        </div>
+      </div>
     </div>
-    <div class="main-hero__wrapper">
-      <span class="main-hero__text">23<span class="main-hero__text-color">food trucks</span></span>
+    <div class="main-hero__content">
+      <h1 class="main-hero__header">
+        ice cream <br />
+        made with<br />
+        <span class="main-hero__header-accent">passion</span>
+      </h1>
+      <div class="main-hero__wrapper">
+        <div class="main-hero__wrapper-margin">
+          <span class="main-hero__text">16<span class="main-hero__text-color">cafes</span></span>
+        </div>
+        <div>
+          <span class="main-hero__text"
+            >23<span class="main-hero__text-color">food trucks</span></span
+          >
+        </div>
+      </div>
     </div>
+    <ul class="main-hero__list">
+      <li>
+        <button
+          class="btn main-hero__btn-product"
+          type="button"
+          onclick="document.location='#header-our-products'"
+        >
+          Products
+        </button>
+      </li>
+      <li>
+        <button
+          class="btn-reverse main-hero__btn-made"
+          type="button"
+          onclick="document.location='#header-how-made'"
+        >
+          How it&#xB4;s made?
+        </button>
+      </li>
+    </ul>
+    <div class="main-hero__bottom">
+      <picture>
+        <source
+          srcset="
+            ./images/hero-milk-desctop-1x-min.webp 1x,
+            ./images/hero-milk-desctop-2x-min.webp 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/hero-milk-desctop-1x-min.png 1x,
+            ./images/hero-milk-desctop-2x-min.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/hero-milk-tab-1x-min.webp 1x, ./images/hero-milk-tab-2x-min.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/hero-milk-tab-1x-min.png 1x, ./images/hero-milk-tab-2x-min.png 2x"
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <img class="main-hero__milk" src="./images/hero-milk-tab-1x-min.png" alt="" />
+      </picture>
+      <div>
+        <p class="main-hero__title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button
+          class="main-hero__btn-modal js-open-modal"
+          data-modal="5"
+          type="button"
+          aria-label="кнопка открытия модального окна"
+        >
+          <svg class="main-hero__btn-icon" width="6" height="6">
+            <use href="./images/icons.svg#icon-arrow-right-solid"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ./images/hero-girl-desctop-1x-min.webp 1x,
+          ./images/hero-girl-desctop-2x-min.webp 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero-girl-desctop-1x-min.png 1x, ./images/hero-girl-desctop-2x-min.png 2x"
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <source
+        srcset="./images/hero-girl-tab-1x-min.webp 1x, ./images/hero-girl-tab-2x-min.webp 2x"
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero-girl-tab-1x-min.png 1x, ./images/hero-girl-tab-2x-min.png 2x"
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img class="main-hero__girl" src="./images/hero-girl-tab-1x-min.png" alt="" />
+    </picture>
   </div>
-  <p class="main-hero__title">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et
-  </p>
-  <button class="main-hero__btn-modal" type="button" aria-label="кнопка открытия модального окна">
-    &#x3E;
-  </button>
-  <picture>
-    <div class="main-hero__milk">
-      <img src="" alt="" />
-    </div>
-    <div class="main-hero__icecream">
-      <img src="" alt="" />
-    </div>
-    <div class="main-hero__girl">
-      <img src="" alt="" />
-    </div>
-  </picture>
 </section>
