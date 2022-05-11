@@ -61,6 +61,14 @@ justify-content: space-between;
 
 .site-nav__item {
     color: $text-white;
+
+    transition: color $ainim-fast;
+}
+
+.site-nav__item:hover,
+.site-nav__item:focus {
+    color: $accent-hover;
+    
 }
 
 @include desk{
@@ -79,9 +87,9 @@ justify-content: space-between;
     margin-right: 35px;
 }
 
-.current {
-    color: $text-main;
-}
+// .current {
+//     color: $text-main;
+// }
 
 
 
@@ -126,6 +134,11 @@ justify-content: space-between;
         margin-left: 12px;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 
     
 

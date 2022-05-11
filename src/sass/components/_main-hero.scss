@@ -14,11 +14,16 @@
 }
 .main-hero__ice {
   position: absolute;
+  // clip: rect(0px, 290px, 1000px, 0px);
   // clip: rect(0 100vh 0 0);
   top: -111px;
-  right: -36px;
+  right: -56px;
   z-index: -1;
+  // @media screen and (min-width: 320px) and (min-width: 767px) {
+    // clip: rect(0px, 290px, 1000px, 0px);
+  // }
   @include tab {
+    // clip: rect(auto auto auto auto);
   top: -53px;
   right: 189px;
   // top: -100%;
@@ -32,6 +37,8 @@
 }
 .main-hero__icecream {
   // max-width: 100vmax;
+  // width: 100vw;
+  // width: 100vw;
   // overflow: hidden;
   // clip: rect(0 100%vh 0 0)
 }
@@ -48,6 +55,9 @@
 .main-hero__icecream-ellipse {
   // overflow: hidden;
   // position: relative;
+  // max-width: 100%;
+  
+
  
   @include tab {
     width: 335px;
@@ -61,7 +71,7 @@
 .main-hero__icecream-ice {
   position: absolute;
   top: 9px;
-  left: 81px;
+  left: 83px;
   // left: 0;
   // top: 0;
   // transform: translate(50%, 50%);
