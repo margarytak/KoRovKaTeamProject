@@ -1,0 +1,209 @@
+.section--about {
+    background-color: $bcg-light;
+    
+    @include tab {
+        padding-top: 20px;
+    }
+
+    @include desk {
+        padding-top: 60px;
+    }
+}
+
+.section--about-bg {
+    background-image: url(/images/made-milk-mob-2x-min.png);
+    @include tab {
+        background-image: none;
+    }
+    @include desk {
+        background-image: url(/images/made-milk-desctop-2x-min.png) ;
+    }
+    background-repeat: no-repeat;
+    background-position: 50% 78%;
+    background-size: contain;
+    max-width: 1280px;
+}
+
+.about__title-box {
+    width: 200px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tab {
+        width: 429px;
+    }
+
+    @include desk {
+        width: 534px;
+    }
+}
+
+.about__title--text {
+    color: $text-secondary;
+    
+    font-family: $title-font;
+    font-size: 18px;
+    line-height: 1.16;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 16px;
+
+    @include tab {
+        font-size: 26px;
+        line-height: 1.16;
+    }
+
+    @include desk {
+        font-size: 30px;
+        line-height: 1.13;
+    }
+}
+
+.about__title {
+    color: $main-btn;
+
+    font-family: $title-font;
+    font-size: 34px;
+    line-height: 1.14;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include tab {
+        font-size: 48px;
+        line-height: 1.16;
+        margin-bottom: 40px;
+    }
+
+    @include desk {
+        font-size: 58px;
+        line-height: 1.13;
+        margin-bottom: 60px;
+    }
+}
+
+.about__box {
+@include tab {
+        display: flex;
+        justify-content: space-around;
+    }
+
+@include desk {
+        justify-content: normal;
+    }    
+}
+
+.about__img {
+    width: 280px;
+    margin-bottom: 40px;
+
+    @include tab {
+        width: 336px;
+        margin-bottom: 0;
+    }
+
+    @include desk {
+        width: 501px;
+        margin-right: 139px;
+        margin-bottom: 0;
+    }
+}
+
+.about__text {
+    font-family: $main-font;
+    font-size: 12px;
+    line-height: 1.62;
+    font-weight: 500;
+    width: 220px;
+
+    &--top {
+        color: $text-dark;
+        margin-bottom: 40px;
+        @include tab {
+        font-size: 14px;
+        line-height: 1.78;
+        width: 334px;
+        }
+        @include desk {
+        margin-bottom: 32px;
+        width: 463px;
+        }
+    }
+
+    &--bottom {
+        color: $text-muted;
+        margin-bottom: 20px;
+        @include tab {
+        font-size: 14px;
+        margin-bottom: 40px;
+        width: 334px;
+        }
+        @include desk {
+        margin-bottom: 40px;
+        width: 463px;
+        }
+    }
+
+    @include tab {
+        width: 334px;
+    }
+
+    @include desk {
+        width: 463px;
+    }
+}
+
+.about__list {
+    @include desk {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.about__btn {
+    @extend %btn-reverse;
+
+    padding: 13px 37px;
+
+    font-size: 14px;
+    line-height: 1.28;
+    font-weight: bold;
+
+
+    &:hover {
+        border: solid 2px;
+        border-color: $main-btn;
+        animation: pulsate 1s ease-in-out;
+        width: 183px;
+    }
+
+    &--svg {
+        width: 5px;
+        height: 8px;
+        margin-left: 13px;
+    }
+
+    @include tab {
+        font-size: 16px;
+        line-height: 1.31;
+    }
+
+    @include desk {
+        font-size: 16px;
+        line-height: 1.31;
+
+        width: 179px;
+    }
+}
+
+
+
+@keyframes pulsate {
+    100%{
+    box-shadow: 0 0 20px #c7133e, 0 0 40px #8a0323;
+    }
+}
