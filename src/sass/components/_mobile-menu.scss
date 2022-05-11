@@ -1,0 +1,170 @@
+.mob-menu {
+    position: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    z-index: 95;
+    
+    top: 0;
+    
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+
+    
+
+    
+        width: 250px;
+        height: 10,0%;
+    padding: 20px 0 20px 20px;
+    transition: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: $bcg-mob-menu;
+
+    @media screen and (min-width: 320px) and (max-width: 1279px) {
+        margin-left: auto;
+        
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 254px;
+        height: 1020px;
+    
+    }
+    
+
+    &.is-open {
+        position: fixed;
+        top: 0;
+        right: 0;
+        box-shadow:(-8px 0px 20px rgba(0, 0, 0, 0.25));
+        
+
+        
+    }
+
+    
+
+    
+
+}
+// .mob-menu__container {
+//     width: 100%;
+//     height: 100%;
+// }
+
+.mob-menu-btn {
+    position: relative;
+    
+    display: block;
+    z-index: 99;
+    cursor: pointer;
+    border: transparent;
+    background-color: transparent;
+    color: $main-btn;
+
+    
+    
+}
+
+@include desk {
+    .mob-menu-btn {
+        display: none;
+    }
+
+}
+
+// .mob-menu-btn__icon {
+//     color: $accent-hover;
+// }
+
+.mob-menu-btn .mob-menu-btn__icon--close {
+    display: none;
+}
+
+.mob-menu-btn.is-open .mob-menu-btn__icon--close {
+    display: block;
+
+}
+
+.mob-menu-btn.is-open .mob-menu-btn__icon--open {
+    display: none;
+}
+
+.mob-menu-btn__icon--open,
+.mob-menu-btn__icon--close {
+    fill: $main-btn;
+}
+
+
+.mob-menu-btn:focus .mob-menu-btn__icon--open,
+.mob-menu-btn:focus .mob-menu-btn__icon--close {
+    fill: #ffffff;
+}
+
+
+
+
+
+
+.mob-menu__main-button {
+    @extend %btn-reverse;
+    display: inline-block;
+    min-width: 209px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 22px;
+    padding: 12px 37px 11px 38px;
+    margin: 40px 0 19px 0;
+
+    font-size: 16px;
+    line-height: 1.30;
+    
+    font-weight: 700;
+
+    
+}
+
+.mob-menu__main-button--svg
+ {
+    margin-left: 32px;
+}
+
+
+
+
+.mob-menu__item {
+
+    min-height: 42px;
+    padding-top: 13px;
+
+    border-top: 1px solid #E18298;
+    color: $text-white;
+
+    font-size: 14px;
+    line-height: 1.30; 
+    font-weight: 700;
+}
+
+.mob-menu__item:last-child {
+    border-bottom: 1px solid #E18298;
+}
+
+.mob-menu__item {
+    color: $text-white;
+
+    transition: color $ainim-fast;
+}
+
+.mob-menu__item:hover,
+.mob-menu__item:focus {
+    color: $accent-hover;
+}
+
+// .mob-menu__current {
+//     color: $main-btn;
+// }
