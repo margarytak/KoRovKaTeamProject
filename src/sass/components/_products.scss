@@ -1,7 +1,6 @@
 .products {
-    @include mob {
-        padding-top: 80px;
-              }
+    padding-top: 80px;
+
     @include tab {
        padding-top: 40px;
        padding-bottom: 60px;
@@ -47,6 +46,7 @@
     color: $text-main;
     letter-spacing: 0.04em;
     text-align: center;
+    margin-bottom: 8px;
     
     @include tab {
         font-size: 48px;
@@ -56,7 +56,7 @@
     @include desk {
         font-size: 58px;
         line-height: 1.14;
-        margin-bottom: 0;
+        margin-bottom: 5px;
         }
     }
 
@@ -66,7 +66,7 @@
     @include tab {
         display: flex;
         flex-wrap: wrap;
-        margin: -8px;
+        margin: -16.5px;
     }
       
     @include desk {
@@ -82,16 +82,12 @@
   
     text-align: center;
   
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
     border-radius: 24px;
-  
-    width: 100%;
+    width: 280px;
     min-height: 489px;
     margin-top: 140px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 39px;
+    padding-right: 41px;
     padding-bottom: 40px;
     
 
@@ -100,8 +96,8 @@
     }
     
     @include tab {
-      flex-basis: calc((100% - 3 * 16px) / 3);
-      margin: 8px;
+      flex-basis: calc((100% - 3 * 33px) / 3);
+      margin: 16.5px;
       margin-top: 138px;
   
       max-width: 224px;
@@ -117,7 +113,7 @@
       margin: 16px;
       margin-top: 261px;
   
-      max-width: 394px;
+      min-width: 395px;
       min-height: 535px;
   
       padding-left: 76px;
@@ -126,16 +122,16 @@
     }
   }
 
-  .product-card-first {
+  .product-card:first-child {
       background-color: $bcg-dark;
         
   &::before {
     content: "";
     position: absolute;
-    bottom: 349px;
+    top: -140px;
     left: 0;
     display: block;
-    width: 100%;
+    width: 280px;
     height: 280px;
     background-image: url('/images/products-ice1-mob-1x-min.png');
     background-size: contain;
@@ -147,20 +143,22 @@
     }
        
     @include tab {
-    bottom: 387px;
+    top: -138px;
     width: 224px;
     height: 224px;
     background-image: url('/images/products-ice1-tab-1x-min.png');
+    animation: animate-products 5500ms infinite 3000ms;
     }
     @include pixel-2x {
         background-image: url('/images/products-ice1-tab-2x-min.png');
     }
 
     @include desk {
-        bottom: 402px;
-        width: 394px;
-        height: 394px;
+        top: -261px;
+        width: 395px;
+        height: 395px;
         background-image: url('/images/products-ice1-desctop-1x-min.png');
+        animation: animate-products 5500ms infinite 3000ms;
         }
         @include pixel-2x {
             background-image: url('/images/products-ice1-desctop-2x-min.png');
@@ -169,13 +167,13 @@
  }
 }
 
-.product-card-second {
+.product-card:nth-child(2) {
     background-color: #F0D1A5;
 
 &::before {
   content: "";
   position: absolute;
-  bottom: 349px;
+  top: -140px;
   left: 0;
   display: block;
   width: 100%;
@@ -190,20 +188,22 @@
   }
      
   @include tab {
-  bottom: 387px;
+  top: -138px;
   width: 100%;
   height: 224px;
   background-image: url('/images/products-ice2-tab-1x-min.png');
+  animation: animate-products 5500ms infinite 3000ms;
   }
   @include pixel-2x {
       background-image: url('/images/products-ice2-tab-2x-min.png');
   }
 
   @include desk {
-      bottom: 402px;
+      top: -261px;
       width: 394px;
       height: 394px;
       background-image: url('/images/products-ice2-desctop-1x-min.png');
+      animation: animate-products 5500ms infinite 3000ms;
       }
       @include pixel-2x {
           background-image: url('/images/products-ice2-desctop-2x-min.png');
@@ -212,13 +212,13 @@
 }
 }
 
-.product-card-third {
+.product-card:last-child {
     background-color: #C2E297;
 
 &::before {
   content: "";
   position: absolute;
-  bottom: 349px;
+  top: -140px;
   left: 0;
   display: block;
   width: 100%;
@@ -233,20 +233,22 @@
   }
      
   @include tab {
-  bottom: 387px;
+  top: -138px;
   width: 224px;
   height: 224px;
   background-image: url('/images/products-ice3-tab-1x-min.png');
+  animation: animate-products 5500ms infinite 3000ms;
   }
   @include pixel-2x {
       background-image: url('/images/products-ice3-tab-2x-min.png');
   }
 
   @include desk {
-      bottom: 402px;
+      top: -261px;
       width: 394px;
       height: 394px;
       background-image: url('/images/products-ice3-desctop-1x-min.png');
+      animation: animate-products 5500ms infinite 3000ms;
       }
       @include pixel-2x {
           background-image: url('/images/products-ice3-desctop-2x-min.png');
@@ -266,10 +268,15 @@
     color: $text-white;
     letter-spacing: 0.04em;
     text-align: center;
-
+    padding-top: 160px;
+    @include tab {
+        padding-top: 118px;
+        }
+    
      @include desk {
         font-size: 30px;
         line-height: 1.13;
+        padding-top: 165px;
         }
     &::after {
         content: "";
@@ -290,12 +297,14 @@
         font-size: 14px;
         line-height: 1.52;
         color: $text-white;
-        letter-spacing: 0.04em;
         text-align: center;
         margin-bottom: 32px;
+        margin-top: 32px;
+        letter-spacing: 0.04em;
 
         @include tab {
             line-height: 1.76;
+            letter-spacing: 0.04em;
              }
              
         @include desk {
@@ -304,6 +313,7 @@
             margin-bottom: 60px;
             }
     }
+  
   
 .product-card__btn {
     width: 40px;
@@ -322,3 +332,16 @@
 }
 
 
+@keyframes animate-products {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
