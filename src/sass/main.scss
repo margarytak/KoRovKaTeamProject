@@ -12,8 +12,14 @@
 @import './components/container';
 @import './components/section';
 
-// @import './components/main-hero.scss';
-
-// @import './components/reviews.scss';
-// @import './components/advantages';
+@import './components/header.scss';
+@import './components/mobile-menu.scss';
+@import './components/main-hero.scss';
 @import './components/about';
+@import './components/products';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/reviews.scss';
+@import './components/contacts';
+@import './components/main-footer';
+@import './components/modal'
