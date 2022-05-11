@@ -10,7 +10,7 @@
   <use href="../src/images/icons.svg#icon-vector-button"></use>
 </svg></button> -->
   <div class="read-more modal" data-modal="1">
-    <button type="button" class="button read-more__button--close js-modal-close">
+    <button type="button" class="button modal-button--close js-modal-close">
       <svg class="icon" width="14" height="14">
         <use href="../src/images/icons.svg#icon-close1"></use>
       </svg>
@@ -31,7 +31,7 @@
     ></iframe>
   </div>
   <div class="our-locations modal" data-modal="2">
-    <button type="button" class="button our-locations__button--close js-modal-close">
+    <button type="button" class="button modal-button--close js-modal-close">
       <svg class="icon" width="14" height="14">
         <use href="../src/images/icons.svg#icon-close1"></use>
       </svg>
@@ -45,10 +45,70 @@
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <div class="franchise modal" data-modal="3">
+    <button type="button" class="button modal-button--close js-modal-close">
+      <svg class="icon" width="14" height="14">
+        <use href="../src/images/icons.svg#icon-close1"></use>
+      </svg>
+    </button>
     <p class="franchise__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, minus!</p>
     <a href="#" download="">
       <button type="button" class="button franchise__button">Download file</button>
     </a>
+  </div>
+  <div class="buy-now modal" data-modal="4">
+    <button type="button" class="button modal-button--close js-modal-close">
+      <svg class="icon" width="14" height="14">
+        <use href="../src/images/icons.svg#icon-close1"></use>
+      </svg>
+    </button>
+    <form name="signup-form" class="buy-now__form" autocomplete="on">
+      <label for="" class="buy-now__label">
+        <span class="buy-now__iput-box">
+          <input type="text"
+                name="username" 
+                class="buy-now__input" required></span>
+        </label>
+        <label for="" class="buy-now__label">
+        <span class="buy-now__iput-box">
+          <input type="tel"
+                name="user-tel" 
+                class="buy-now__input" required></span>
+        </label>
+        <label for="" class="buy-now__label">
+        <span class="buy-now__iput-box">
+          <input type="email"
+                name="user-email" 
+                class="buy-now__input" required></span>
+        </label>
+        <label for="" class="buy-now__label buy-now__coment">
+          <textarea 
+              name="user-feedback"
+              rows="7"
+              placeholder="Enter text">
+          </textarea>
+        </label>
+        <label for="" class="buy-now__label">
+          <input 
+              type="checkbox"
+              name="agreement"
+              value="agreement"
+              requiredclass="buy-now__checkbox">
+              <span class="buy-now__agree-text">
+                <span class="buy-now__custom-checkbox">
+                  <svg class="icon">
+                    <use></use>
+                  </svg>
+                </span>
+                I agree with the newsletter and accept
+              </span>
+              <a href="#" class="buy-now__agree-link">
+                Agreement conditions
+              </a>
+        </label>
+        <button class="button buy-now__signup-btn" type="submit">
+            Send
+          </button>
+    </form>
   </div>
   <div class="overlay js-overlay-modal"></div>
 </div>
