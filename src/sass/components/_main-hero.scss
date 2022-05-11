@@ -2,6 +2,7 @@
   // position: relative;
   background-color: $bcg-dark;
   padding-top: 136px;
+
   background-image: -moz-element();
   @include tab {
     padding-top: 16px;
@@ -336,5 +337,10 @@ screen and (-o-min-device-pixel-ratio: 2 / 1) {
     // width: 304px;
     // height: 241px;
     bottom: -60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-hero__container {
+      overflow: hidden;
   }
 }
