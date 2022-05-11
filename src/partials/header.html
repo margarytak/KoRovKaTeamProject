@@ -1,32 +1,24 @@
-<header class="header">
-  <div class="header__container container">
-    <nav class="main-nav">
-      <a href="/" class="header__logo">
-        <picture>
-          <source
-            srcset="./images/logo-1x-min.png 1x, ./images/logo-2x-min.png 2x"
-            media="(min-width: 1280px)"
-            type="image/png"
-          />
-          <source
-            srcset="./images/logo-1x-min.png 1x, ./images/logo-2x-min.png 2x"
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-          <source
-            srcset="./images/logo-1x-min.png 1x, ./images/logo-2x-min.png 2x"
-            media="(max-width: 767px)"
-            type="image/png"
-          />
-          <img src="/images/logo-1x-min.png" alt="Логотип" />
-        </picture>
-      </a>
+
+<header class="header" id="header-home">
+    <div class="header__container container">
+      <nav class="main-nav" >
+        <a href="/" class="header__logo" >
+            <picture >
+            <source srcset="./images/logo-1x-min.png   1x, ./images/logo-2x-min.png 2x" media="(min-width: 1280px)"
+                type="image/png" />
+            <source srcset="./images/logo-1x-min.png   1x, ./images/logo-2x-min.png 2x" media="(min-width: 768px)"
+                type="image/png" />
+            <source srcset="./images/logo-1x-min.png   1x, ./images/logo-2x-min.png 2x" media="(max-width: 767px)"
+                type="image/png" />
+            <img src="/images/logo-1x-min.png" alt="Логотип">
+            </picture>
+        </a>
       <ul class="site-nav">
-        <li class="site-nav__item current"><a href="">Home</a></li>
-        <li class="site-nav__item"><a href="#about-us">About us</a></li>
-        <li class="site-nav__item"><a href="#how-made">How it’s made?</a></li>
-        <li class="site-nav__item"><a href="#our-products">Our products</a></li>
-        <li class="site-nav__item"><a href="#contacts">Contact</a></li>
+          <li class="site-nav__item current"><a href="#header-home">Home</a></li>
+          <li class="site-nav__item"><a href="#header-about-us">About us</a></li>
+          <li class="site-nav__item"><a href="#header-how-made">How it’s made?</a></li>
+          <li class="site-nav__item"><a href="#header-our-products">Our products</a></li>
+          <li class="site-nav__item"><a href="#header-contacts">Contact</a></li>
       </ul>
 
       <button type="button" class="mob-menu-btn" data-menu-button>
@@ -51,20 +43,18 @@
 
   <div class="mob-menu" data-menu>
     <div class="mob-menu__container">
-      <button class="mob-menu__main-button js-open-modal" type="button" data-modal="4">
-        Buy now
-        <svg class="mob-menu__main-button--svg" width="6px" height="10px">
-          <use href="/images/icons.svg#icon-vector-button"></use>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu__list">
-        <li class="mob-menu__item mob-menu__current"><a href="">Home</a></li>
-        <li class="mob-menu__item"><a href="#about-us">About us</a></li>
-        <li class="mob-menu__item"><a href="#how-made">How it’s made?</a></li>
-        <li class="mob-menu__item"><a href="#our-products">Our products</a></li>
-        <li class="mob-menu__item"><a href="#contacts">Contact</a></li>
-      </ul>
+        <button class="mob-menu__main-button js-open-modal" type="button" data-modal="4">Buy now
+            <svg class="mob-menu__main-button--svg" width="6px" height="10px">
+                      <use href="/images/icons.svg#icon-vector-button"></use>
+                  </svg>
+        </button>
+        <ul class="mobile-menu__list ">
+            <li class="mob-menu__item mob-menu__current"><a href="#mob-home">Home</a></li>
+            <li class="mob-menu__item"><a href="#mob-about-us">About us</a></li>
+            <li class="mob-menu__item"><a href="" onclick="document.location='#mob-how-made'">How it’s made?</a></li>
+            <li class="mob-menu__item"><a href="#mob-our-products">Our products</a></li>
+            <li class="mob-menu__item"><a href="#mob-contacts">Contact</a></li>
+        </ul>
     </div>
   </div>
 </header>

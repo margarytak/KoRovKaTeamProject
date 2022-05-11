@@ -352,6 +352,92 @@
     opacity: 1;
   }
 }
+
+.hero-modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 320px;
+  padding: 30px 20px 20px 20px;
+  background-color: #fff5f6;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  z-index: 20;
+  transform: translate(100vw 100vh);
+  transition: transform $ainim-fast, opacity $ainim-fast, visibility $ainim-fast;
+
+  @media (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media (min-width: 768px) {
+    width: 590px;
+  }
+
+  &__title {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    color: $text-main;
+    margin-bottom: 5px;
+  }
+
+  &__table{
+    border-collapse: collapse;
+  }
+
+  &__table-title{
+    text-align: center;
+    padding: 5px;
+    background-color: $bcg-mob-menu;
+    font-size: 16px;
+    border-left: 1px solid $bcg-icon;
+    border-right: 1px solid $bcg-icon;
+  }
+
+  &__table-text{
+    text-align: center;
+    border-left: 1px solid $bcg-icon;
+    border-right: 1px solid $bcg-icon;
+    border-bottom: 1px solid $bcg-icon;
+    padding: 5px;
+    font-size: 14px;
+
+    &:nth-child(3n-2){
+      background-color: $bcg-dark;
+    }
+  }
+
+  &__button--close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $bcg-light;
+    color: rgba(212, 20, 67, 1);
+  
+    & .icon {
+      fill: currentColor;
+    }
+  }
+
+  &.active {
+    transform: translate(-50%, -50%);
+  }
+}
 .overlay.active,
 .modal.active {
   opacity: 1;
