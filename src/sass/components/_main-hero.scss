@@ -1,9 +1,7 @@
 .main-hero__container {
-  // position: relative;
+  position: relative;
   background-color: $bcg-dark;
   padding-top: 136px;
-
-  background-image: -moz-element();
   @include tab {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -13,21 +11,29 @@
     padding-bottom: 60px;
   }
 }
+.main-hero__container-icecream {
+  @extend .container;
+  position: relative;
+  z-index: 10;
+}
 .main-hero__ice {
   position: absolute;
   top: -111px;
   right: -56px;
   z-index: -1;
+
   @include tab {
     top: -53px;
     right: 189px;
   }
+
   @include desk {
     top: -75px;
     right: 229px;
   }
 }
 .main-hero__icecream-ellipse {
+  z-index: -2;
   @include tab {
     width: 335px;
     height: 333px;
@@ -41,6 +47,7 @@
   position: absolute;
   top: 9px;
   left: 83px;
+
   // animation: bounce-top 0.9s both;
   // animation: animate__flip 0.9s both;
   @include tab {
@@ -49,17 +56,13 @@
     top: 37px;
     left: 74px;
   }
+
   @include desk {
     width: 236px;
     height: 557px;
     top: 54px;
     left: 119px;
   }
-}
-.main-hero__container-position {
-  @extend .container;
-  position: relative;
-  z-index: 10;
 }
 .main-hero__header {
   font-family: 'Titan One';
