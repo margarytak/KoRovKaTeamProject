@@ -1,4 +1,4 @@
-  .products-gallery {
+  .products-modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -6,7 +6,7 @@
     min-height: 500px;
 
     padding: 30px 15px 15px 15px;
-    background-color: $text-white;
+    background-color: $bcg-dark;
     border: 2px solid $bcg-mob-menu;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -27,29 +27,7 @@
     @media (min-width: 768px) {
       width: 590px;
     }
-    &.active {
-      transform: translate(-50%, -50%) scale(1);
-    }
-    &__title {
-      font-family: $title-font;
-      font-weight: 400;
-      font-size: 22px;
-      text-transform: uppercase;
-      line-height: 1.76;
-      letter-spacing: 0.04em;
-      color: $text-main;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    &__text {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.76;
-      letter-spacing: 0.04em;
-      color: $text-dark;
-      margin-bottom: 30px;
-    }
- 
+  
     &.active {
       transform: translate(-50%, -50%);
     }
@@ -88,8 +66,8 @@
     transform-style: preserve-3d;
     -webkit-transform: translateZ(-182px) rotateY(0);
     transform: translateZ(-182px) rotateY(0);
-    -webkit-animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
-    animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+    -webkit-animation: carousel 12s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+    animation: carousel 12s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
   }
   
   .carousel-item {
@@ -114,56 +92,82 @@
   
   .carousel-item:nth-child(3) {
      -webkit-transform: rotateY(120deg) translateZ(182px);
-    transform: rotateY(240deg) translateZ(182px);
+    transform: rotateY(120deg) translateZ(182px);
   }
   
   .carousel-item:nth-child(4) {
-    -webkit-transform: rotateY(120deg) translateZ(182px);
-   transform: rotateY(120deg) translateZ(182px);
- }
-
- .carousel-item:nth-child(5) {
     -webkit-transform: rotateY(180deg) translateZ(182px);
    transform: rotateY(180deg) translateZ(182px);
  }
-  
- .carousel-item:nth-child(6) {
+
+ .carousel-item:nth-child(5) {
     -webkit-transform: rotateY(240deg) translateZ(182px);
    transform: rotateY(240deg) translateZ(182px);
  }
+  
+ .carousel-item:nth-child(6) {
+    -webkit-transform: rotateY(300deg) translateZ(182px);
+   transform: rotateY(300deg) translateZ(182px);
+ }
+
+
   @-webkit-keyframes 
-  carousel {  0%, 17.5% {
+  carousel {  0%, 14.3% {
    -webkit-transform: translateZ(-182px) rotateY(0);
    transform: translateZ(-182px) rotateY(0);
   }
-   27.5%, 45% {
+   24.3%, 28.4% {
+   -webkit-transform: translateZ(-182px) rotateY(-60deg);
+   transform: translateZ(-182px) rotateY(-60deg);
+  }
+  36.5%, 42.6% {
    -webkit-transform: translateZ(-182px) rotateY(-120deg);
    transform: translateZ(-182px) rotateY(-120deg);
   }
-   55%, 72.5% {
-   -webkit-transform: translateZ(-182px) rotateY(-240deg);
-   transform: translateZ(-182px) rotateY(-240deg);
+  48.6%, 56.8% {
+   -webkit-transform: translateZ(-182px) rotateY(-180deg);
+   transform: translateZ(-182px) rotateY(-180deg);
   }
-   82.5%, 100% {
-   -webkit-transform: translateZ(-182px) rotateY(-360deg);
-   transform: translateZ(-182px) rotateY(-360deg);
-  }
+  64.8%, 71.1% {
+    -webkit-transform: translateZ(-182px) rotateY(-240deg);
+    transform: translateZ(-182px) rotateY(-240deg);
+   }
+   78.1%, 85.3% {
+    -webkit-transform: translateZ(-182px) rotateY(-300deg);
+    transform: translateZ(-182px) rotateY(-300deg);
+   }
+   94.3%, 100% {
+    -webkit-transform: translateZ(-182px) rotateY(-300deg);
+    transform: translateZ(-182px) rotateY(-300deg);
+   }
   }
    @keyframes 
-  carousel {  0%, 17.5% {
-   -webkit-transform: translateZ(-182px) rotateY(0);
-   transform: translateZ(-182px) rotateY(0);
-  }
-   27.5%, 45% {
-   -webkit-transform: translateZ(-182px) rotateY(-120deg);
-   transform: translateZ(-182px) rotateY(-120deg);
-  }
-   55%, 72.5% {
-   -webkit-transform: translateZ(-182px) rotateY(-240deg);
-   transform: translateZ(-182px) rotateY(-240deg);
-  }
-   82.5%, 100% {
-   -webkit-transform: translateZ(-182px) rotateY(-360deg);
-   transform: translateZ(-182px) rotateY(-360deg);
-  }
+  carousel {  0%, 14.3% {
+    -webkit-transform: translateZ(-182px) rotateY(0);
+    transform: translateZ(-182px) rotateY(0);
+   }
+    24.3%, 28.4% {
+    -webkit-transform: translateZ(-182px) rotateY(-60deg);
+    transform: translateZ(-182px) rotateY(-60deg);
+   }
+   36.5%, 42.6% {
+    -webkit-transform: translateZ(-182px) rotateY(-120deg);
+    transform: translateZ(-182px) rotateY(-120deg);
+   }
+   48.6%, 56.8% {
+    -webkit-transform: translateZ(-182px) rotateY(-180deg);
+    transform: translateZ(-182px) rotateY(-180deg);
+   }
+   64.8%, 71.1% {
+     -webkit-transform: translateZ(-182px) rotateY(-240deg);
+     transform: translateZ(-182px) rotateY(-240deg);
+    }
+    78.1%, 85.3% {
+     -webkit-transform: translateZ(-182px) rotateY(-300deg);
+     transform: translateZ(-182px) rotateY(-300deg);
+    }
+    94.3%, 100% {
+     -webkit-transform: translateZ(-182px) rotateY(-300deg);
+     transform: translateZ(-182px) rotateY(-300deg);
+    }
   }
