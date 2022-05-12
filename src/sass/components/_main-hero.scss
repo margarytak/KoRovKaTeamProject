@@ -77,16 +77,17 @@
   // top: 0;
   // transform: translate(50%, 50%);
   // z-index: -1;
+
   @include tab {
     width: 143px;
     height: 336px;
-    top: 37px;
+    top: 20px;
     left: 74px;
   }
   @include desk {
     width: 236px;
     height: 557px;
-    top: 54px;
+    top: 41px;
     left: 119px;
   }
 
@@ -188,8 +189,10 @@
     display: block;
     margin-left: auto;
     margin-right: 15px;
+    height: 60px;
   }
 }
+
 .main-hero__wrapper-margin {
   margin-bottom: 16px;
 }
@@ -215,7 +218,6 @@
     height: 16px;
     background-image: url(../images/hero-ellipse-tab-1x-min.png);
     background-image: -webkit-image-set(url(../images/hero-ellipse-tab-1x-min.webp) 1x);
-
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-moz-min-device-pixel-ratio: 2),
       screen and (-o-min-device-pixel-ratio: 2/1),
@@ -224,34 +226,34 @@
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/hero-ellipse-tab-2x-min.png);
       background-image: -webkit-image-set(url(../images/hero-ellipse-tab-2x-min.webp) 2x);
-    }
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -3px;
-    right: -10px;
-    // transform: translate(50%, 50%);
-    z-index: -1;
-    @include desk {
-      width: 30px;
-      height: 30px;
-      top: -7px;
-      right: -15px;
-      background-image: url(../images/hero-ellipse-desctop-1x-min.png);
-      background-image: -webkit-image-set(url(../images/hero-ellipse-desc-1x-min.webp) 1x);
-
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (-moz-min-device-pixel-ratio: 2),
-        screen and (-o-min-device-pixel-ratio: 2/1),
-        screen and (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../images/hero-ellipse-desctop-2x-min.png);
-        background-image: -webkit-image-set(url(../images/hero-ellipse-desc-2x-min.webp) 2x);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -3px;
+      right: -10px;
+      // transform: translate(50%, 50%);
+      z-index: -1;
+      @include desk {
+        width: 30px;
+        height: 30px;
+        top: -7px;
+        right: -15px;
+        background-image: url(../images/hero-ellipse-desctop-1x-min.png);
+        background-image: -webkit-image-set(url(../images/hero-ellipse-desc-1x-min.webp) 1x);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (-moz-min-device-pixel-ratio: 2),
+          screen and (-o-min-device-pixel-ratio: 2/1),
+          screen and (-webkit-min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images/hero-ellipse-desctop-2x-min.png);
+          background-image: -webkit-image-set(url(../images/hero-ellipse-desc-2x-min.webp) 2x);
+        }
       }
     }
   }
 }
+
 @media screen and (min-device-pixel-ratio: 2),
   screen and (-moz-min-device-pixel-ratio: 2),
   screen and (-o-min-device-pixel-ratio: 2 / 1) {
@@ -344,6 +346,7 @@
     bottom: -60px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .main-hero__container {
     overflow: hidden;
