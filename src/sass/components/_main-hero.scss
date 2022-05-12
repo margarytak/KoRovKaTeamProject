@@ -332,7 +332,6 @@
     // height: 216px;
   }
 }
-
 .main-hero__girl {
   display: none;
   @include tab {
@@ -351,4 +350,5 @@
   .main-hero__container {
     overflow: hidden;
   }
+}
 }
