@@ -127,6 +127,10 @@
    transform: rotateY(180deg) translateZ(182px);
  }
   
+ .carousel-item:nth-child(6) {
+    -webkit-transform: rotateY(240deg) translateZ(182px);
+   transform: rotateY(240deg) translateZ(182px);
+ }
   @-webkit-keyframes 
   carousel {  0%, 17.5% {
    -webkit-transform: translateZ(-182px) rotateY(0);

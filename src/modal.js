@@ -76,3 +76,4 @@ document.addEventListener('DOMContentLoaded', function () {
 const body = document.querySelector("body");
 const mobileMenuRef = document.querySelector("[data-menu]")
 const menuBtnRef = document.querySelector("[data-menu-button]")
+
