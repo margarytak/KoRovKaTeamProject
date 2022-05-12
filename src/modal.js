@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
       modalElem.classList.add('active');
       overlay.classList.add('active');
       body.classList.add("no-scroll");
-      mobileMenuRef.classList.toggle("is-open")
-      menuBtnRef.classList.toggle("is-open")
+      mobileMenuRef.classList.remove("is-open")
+      menuBtnRef.classList.remove("is-open")
     });
   });
 
