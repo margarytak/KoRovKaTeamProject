@@ -325,6 +325,10 @@
   }
 }
 .main-hero__milk {
+  &:hover,
+  &:focus {
+      animation: bounce-top 0.9s both;
+    }
   @include desk {
     // width: 213px;
     // height: 216px;
@@ -337,6 +341,10 @@
     position: absolute;
     bottom: -15px;
     right: 15px;
+    &:hover,
+    &:focus {
+    animation: bounce-top;
+    }
   }
   @include desk {
     // width: 304px;
