@@ -8,6 +8,7 @@
 @import './utils/base';
 @import './utils/mixins';
 @import './utils/btn-placeholder';
+@import './utils/animation.scss';
 
 @import './components/container';
 @import './components/section';
@@ -18,7 +19,7 @@
 @import './components/products';
 @import './components/about';
 @import './components/advantages';
-@import './components/gallery';
+// @import './components/gallery';
 @import './components/reviews';
 @import './components/contacts';
 @import './components/main-footer';

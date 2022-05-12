@@ -71,7 +71,7 @@
     color: $main-btn;
 
     font-family: $title-font;
-    font-size: 34px;
+    font-size: 35px;
     line-height: 1.14;
     font-weight: 400;
     text-transform: uppercase;
@@ -124,7 +124,8 @@
         justify-content: space-around;
         &:hover{
     transform: scale(1.03);
-    background-color: rgba($color: #f1356d, $alpha: 0.1);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color: #f1356d, $alpha: 0.07);
     -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
 box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);;
     }
@@ -134,7 +135,7 @@ box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 
         justify-content: normal;
         &:hover{
     transform: scale(1.03);
-    background-color: rgba($color: #f1356d, $alpha: 0.1);
+    background-color: rgba($color: #f1356d, $alpha: 0.07);
     -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
 box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);;
     }
@@ -144,6 +145,10 @@ box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 
 .about__img {
     width: 280px;
     margin-bottom: 40px;
+    @media screen and (max-width:767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @include tab {
         width: 336px;
@@ -162,7 +167,9 @@ box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 
     font-size: 12px;
     line-height: 1.58;
     font-weight: 500;
+
     width: 220px;
+    margin-right: 80px;
 
     &--top {
         color: $text-dark;
@@ -171,12 +178,14 @@ box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 
         font-size: 14px;
         line-height: 1.78;
         width: 334px;
+        margin-right: 0;
         }
         @include desk {
         font-size: 16px;
         line-height: 1.75;
         margin-bottom: 32px;
         width: 463px;
+        margin-right: 0;
         }
     }
 
@@ -188,10 +197,12 @@ box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 
         line-height: 1.92;
         margin-bottom: 40px;
         width: 334px;
+        margin-right: 0;
         }
         @include desk {
         margin-bottom: 40px;
         width: 463px;
+        margin-right: 0;
         }
     }
 
@@ -225,8 +236,9 @@ box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
+    &:hover,&:focus {
         border: 1px solid $main-btn-hover;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
     }
 
     &--svg {
