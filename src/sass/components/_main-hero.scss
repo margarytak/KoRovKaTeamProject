@@ -318,6 +318,8 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
+      // fill: #ffffff;
+      // background-color: #d41443;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
       }
   }
@@ -329,6 +331,10 @@
 }
 .main-hero__btn-icon {
   fill: $main-btn;
+  // &:hover,
+  // &:focus {
+  //   fill: #fff;
+  // }
 }
 .main-hero__bottom {
   display: none;
@@ -355,11 +361,11 @@
     position: absolute;
     bottom: -15px;
     right: 15px;
-    &:hover,
-    &:focus {
-    animation: bounce-top;
+    // &:hover,
+    // &:focus {
+    // animation: bounce-top;Ї
     }
-  }
+  
   @include desk {
     // width: 304px;
     // height: 241px;
@@ -367,7 +373,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-hero__container {
     overflow: hidden;
   }
