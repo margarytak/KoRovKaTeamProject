@@ -11,6 +11,5 @@
 
     mobileMenuRef.classList.toggle("is-open")
     body.classList.toggle("no-scroll");
-
   })
 })()
