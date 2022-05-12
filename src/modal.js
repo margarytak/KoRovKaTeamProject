@@ -38,6 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      body.classList.add("no-scroll");
+      mobileMenuRef.classList.remove("is-open")
+      menuBtnRef.classList.remove("is-open")
     });
   });
 
@@ -47,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      body.classList.remove("no-scroll")
     });
   });
 
@@ -68,3 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
   });
 });
+
+const body = document.querySelector("body");
+const mobileMenuRef = document.querySelector("[data-menu]")
+const menuBtnRef = document.querySelector("[data-menu-button]")
