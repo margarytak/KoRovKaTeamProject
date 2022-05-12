@@ -204,7 +204,7 @@
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+    color: $main-btn;
     @include desk {
       font-size: 46px;
         line-height: 1.15;
@@ -305,6 +305,7 @@ screen and (-o-min-device-pixel-ratio: 2 / 1) {
       cursor: pointer;
       border-radius: 50%;
       background-color: #fff;
+      fill: #D41443;
       }
       @include desk {
         width: 26px;
