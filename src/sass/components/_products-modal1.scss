@@ -6,7 +6,7 @@
     min-height: 500px;
 
     padding: 30px 15px 15px 15px;
-    background-color: $bcg-dark;
+    background-color: #c7f3e4;
     border: 2px solid $bcg-mob-menu;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -25,7 +25,7 @@
       width: 480px;
     }
     @media (min-width: 768px) {
-      width: 590px;
+      width: 600px;
     }
   
     &.active {
