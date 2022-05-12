@@ -71,25 +71,24 @@
   position: absolute;
   top: 9px;
   left: 83px;
-      // animation: bounce-top 0.9s both;
-      // animation: animate__flip 0.9s both;
+  // animation: bounce-top 0.9s both;
+  // animation: animate__flip 0.9s both;
   // left: 0;
   // top: 0;
   // transform: translate(50%, 50%);
   // z-index: -1;
-@include tab {
-  width: 143px;
-  height: 336px;
-  top: 37px;
-  left: 74px;
-}
-@include desk {
-  width: 236px;
-  height: 557px;
-  top: 54px;
-  left: 119px;
-}
-
+  @include tab {
+    width: 143px;
+    height: 336px;
+    top: 37px;
+    left: 74px;
+  }
+  @include desk {
+    width: 236px;
+    height: 557px;
+    top: 54px;
+    left: 119px;
+  }
 
   // @include tab {
   //   // width: 335px;
@@ -295,28 +294,27 @@
 .main-hero__btn-modal {
   display: none;
 
-    @include tab {
-      margin-top: 3px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 18px;
-      height: 18px;
-      border: none;
-      cursor: pointer;
-      border-radius: 50%;
-      background-color: #fff;
-      fill: #D41443;
-      }
-      @include desk {
-        width: 26px;
-        height: 26px;
-        margin-top: 19px;
-      }
-  
-  .main-hero__btn-icon {
+  @include tab {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    fill: #d41443;
+  }
+  @include desk {
+    width: 26px;
+    height: 26px;
+    margin-top: 19px;
+  }
+}
+.main-hero__btn-icon {
   fill: $main-btn;
-
 }
 .main-hero__bottom {
   display: none;
@@ -350,5 +348,4 @@
   .main-hero__container {
     overflow: hidden;
   }
-}
 }
