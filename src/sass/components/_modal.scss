@@ -281,6 +281,7 @@
   }
   &__agree-text {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
   &__checkbox {
@@ -303,6 +304,9 @@
       opacity: 0;
       transition: opacity $anim-fast;
     }
+  }
+  &__checkbox-text {
+    font-size: 14px;
   }
   &__agree-link {
     margin-left: 4px;
