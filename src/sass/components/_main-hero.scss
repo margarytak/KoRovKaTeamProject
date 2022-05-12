@@ -15,49 +15,19 @@
 }
 .main-hero__ice {
   position: absolute;
-  // clip: rect(0px, 290px, 1000px, 0px);
-  // clip: rect(0 100vh 0 0);
   top: -111px;
   right: -56px;
   z-index: -1;
-  // @media screen and (min-width: 320px) and (min-width: 767px) {
-  // clip: rect(0px, 290px, 1000px, 0px);
-  // }
   @include tab {
-    // clip: rect(auto auto auto auto);
     top: -53px;
     right: 189px;
-    // top: -100%;
-    // right: -100%;
-    // transform: translate(-50%, -50%);
   }
   @include desk {
     top: -75px;
     right: 229px;
   }
 }
-// .main-hero__icecream {
-//   // max-width: 100vmax;
-//   // width: 100vw;
-//   // width: 100vw;
-//   // overflow: hidden;
-//   // clip: rect(0 100%vh 0 0)
-// }
-// .main-hero__icecream {
-// position: relative;
-// }
-// .main-hero__icecream-ellipse {
-// position: relative;
-// left: 0;
-// top: 0;
-// transform: translate(50%, 50%);
-// z-index: -2;
-// }
 .main-hero__icecream-ellipse {
-  // overflow: hidden;
-  // position: relative;
-  // max-width: 100%;
-
   @include tab {
     width: 335px;
     height: 333px;
@@ -73,10 +43,6 @@
   left: 83px;
   // animation: bounce-top 0.9s both;
   // animation: animate__flip 0.9s both;
-  // left: 0;
-  // top: 0;
-  // transform: translate(50%, 50%);
-  // z-index: -1;
   @include tab {
     width: 143px;
     height: 336px;
@@ -89,25 +55,11 @@
     top: 54px;
     left: 119px;
   }
-
-  // @include tab {
-  //   // width: 335px;
-  //   // height: 373px;
-  //   right: 50%;
-  //   bottom: 50%;
-  //   transform: translate(50%, 50%);
-  // }
-
-  // @include desk {
-  // width: 534px;
-  // height: 611px;
-  // }
 }
 .main-hero__container-position {
   @extend .container;
   position: relative;
   z-index: 10;
-  // margin-left: 20px;
 }
 .main-hero__header {
   font-family: 'Titan One';
@@ -215,7 +167,6 @@
     height: 16px;
     background-image: url(../images/hero-ellipse-tab-1x-min.png);
     background-image: -webkit-image-set(url(../images/hero-ellipse-tab-1x-min.webp) 1x);
-
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-moz-min-device-pixel-ratio: 2),
       screen and (-o-min-device-pixel-ratio: 2/1),
@@ -239,7 +190,6 @@
       right: -15px;
       background-image: url(../images/hero-ellipse-desctop-1x-min.png);
       background-image: -webkit-image-set(url(../images/hero-ellipse-desc-1x-min.webp) 1x);
-
       @media screen and (min-device-pixel-ratio: 2),
         screen and (-moz-min-device-pixel-ratio: 2),
         screen and (-o-min-device-pixel-ratio: 2/1),
