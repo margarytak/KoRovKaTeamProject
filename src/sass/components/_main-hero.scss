@@ -2,6 +2,8 @@
   position: relative;
   background-color: $bcg-dark;
   padding-top: 136px;
+  padding-bottom: 158px;
+  background-image: -moz-element();
   @include tab {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -50,17 +52,18 @@
 
   // animation: bounce-top 0.9s both;
   // animation: animate__flip 0.9s both;
+
   @include tab {
     width: 143px;
     height: 336px;
-    top: 37px;
+    top: 20px;
     left: 74px;
   }
 
   @include desk {
     width: 236px;
     height: 557px;
-    top: 54px;
+    top: 41px;
     left: 119px;
   }
 }
@@ -95,7 +98,6 @@
   }
 }
 .main-hero__list {
-  padding-bottom: 158px;
   display: flex;
   margin-top: 20px;
   @include tab {
@@ -108,13 +110,21 @@
     margin-bottom: 40px;
   }
 }
+.main-hero__list-item:not(:last-child) {
+  margin-right: 8px;
+  @include tab {
+  margin-right: 7px;
+  }
+  @include desk {
+    margin-right: 12px;
+  }
+}
 .main-hero__btn-product {
   @extend %btn;
   padding: 11px 14px;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25px;
-  margin-right: 8px;
   @include desk {
     font-size: 14px;
     line-height: 1.29px;
@@ -143,8 +153,10 @@
     display: block;
     margin-left: auto;
     margin-right: 15px;
+    height: 60px;
   }
 }
+
 .main-hero__wrapper-margin {
   margin-bottom: 16px;
 }
@@ -205,6 +217,7 @@
     }
   }
 }
+
 @media screen and (min-device-pixel-ratio: 2),
   screen and (-moz-min-device-pixel-ratio: 2),
   screen and (-o-min-device-pixel-ratio: 2 / 1) {
@@ -259,6 +272,11 @@
     border-radius: 50%;
     background-color: #fff;
     fill: #d41443;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
+      }
   }
   @include desk {
     width: 26px;
@@ -278,6 +296,10 @@
   }
 }
 .main-hero__milk {
+  &:hover,
+  &:focus {
+      animation: bounce-top 0.9s both;
+    }
   @include desk {
     // width: 213px;
     // height: 216px;
@@ -290,6 +312,10 @@
     position: absolute;
     bottom: -15px;
     right: 15px;
+    &:hover,
+    &:focus {
+    animation: bounce-top;
+    }
   }
   @include desk {
     // width: 304px;
@@ -297,6 +323,7 @@
     bottom: -60px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .main-hero__container {
     overflow: hidden;

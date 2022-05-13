@@ -9,14 +9,21 @@
   }
 }
 .foot__container {
+  margin-bottom: 40px;
   @include tab {
     display: flex;
     justify-content: space-between;
+  @include desk {
+    margin-bottom: 60px;
+  }
   }
 }
 .foot__slogan {
   margin-bottom: 40px;
   overflow-wrap: break-word;
+  @include tab {
+    margin-bottom: 0;
+  }
 }
 
 .foot__ice-cream {
@@ -27,7 +34,6 @@
   @include desk {
     width: 474px;
   }
-  margin-left: 2px;
   margin-bottom: 16px;
   text-transform: uppercase;
   font-family: $title-font;
@@ -116,7 +122,7 @@
 .foot__address {
   display: flex;
   justify-content: end;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 
   font-style: normal;
   font-family: $main-font;
@@ -141,6 +147,7 @@
 
   color: $text-main;
 }
+
 .foot__wrap-copyright {
   display: flex;
   overflow-wrap: break-word;

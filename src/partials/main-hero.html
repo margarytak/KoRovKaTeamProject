@@ -51,7 +51,7 @@
               type="image/png"
             />
             <img
-              class="main-hero__icecream-ellipse"
+              class="main-hero__icecream-ellipse animate__animated animate__rotateIn animate__slow"
               src="./images/hero-ice-ellips-mob-1x-min.png"
               alt=""
               width="346"
@@ -90,7 +90,7 @@
               type="image/png"
             />
             <img
-              class="main-hero__icecream-ice animate__animated animate__pulse"
+              class="main-hero__icecream-ice animate__animated animate__pulse animate__slower animate__infinite"
               src="./images/hero-ice-mob-1x-min.png"
               alt=""
               width="171"
@@ -189,6 +189,28 @@
           </button>
         </div>
       </div>
+    </div>
+    <ul class="main-hero__list">
+      <li class="main-hero__list-item">
+        <button
+          class="btn main-hero__btn-product"
+          type="button"
+          onclick="document.location='#header-our-products'"
+        >
+          Products
+        </button>
+      </li>
+      <li class="main-hero__list-item">
+        <button
+          class="btn-reverse main-hero__btn-made"
+          type="button"
+          onclick="document.location='#header-how-made'"
+        >
+          How it&#xB4;s made?
+        </button>
+      </li>
+    </ul>
+    <div class="main-hero__bottom">
       <picture>
         <source
           srcset="
@@ -220,5 +242,57 @@
         />
       </picture>
     </div>
+          class="main-hero__milk animate__animated animate__bounce animate__slower"
+          src="./images/hero-milk-tab-1x-min.png"
+          alt=""
+        />
+      </picture>
+      <div>
+        <p class="main-hero__title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button
+          class="main-hero__btn-modal js-open-modal"
+          data-modal="5"
+          type="button"
+          aria-label="кнопка открытия модального окна"
+        >
+          <svg class="main-hero__btn-icon" width="6" height="6">
+            <use href="./images/icons.svg#icon-arrow-right-solid"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ./images/hero-girl-desctop-1x-min.webp 1x,
+          ./images/hero-girl-desctop-2x-min.webp 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero-girl-desctop-1x-min.png 1x, ./images/hero-girl-desctop-2x-min.png 2x"
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <source
+        srcset="./images/hero-girl-tab-1x-min.webp 1x, ./images/hero-girl-tab-2x-min.webp 2x"
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero-girl-tab-1x-min.png 1x, ./images/hero-girl-tab-2x-min.png 2x"
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img
+        class="main-hero__girl animate__animated animate__bounce animate__slower"
+        src="./images/hero-girl-tab-1x-min.png"
+        alt=""
+      />
+    </picture>
   </div>
 </section>
