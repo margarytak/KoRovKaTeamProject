@@ -323,7 +323,7 @@
   @include tab {
     display: block;
     position: absolute;
-    bottom: 0px;
+    bottom: -16px;
     right: 15px;
     // &:hover,
     // &:focus {
@@ -333,7 +333,7 @@
   @include desk {
     // width: 304px;
     // height: 241px;
-    bottom: 0px;
+    bottom: -60px;
   }
 }
 @media screen and (max-width: 767px) {
