@@ -1,8 +1,8 @@
 .main-hero__container {
-  // position: relative;
+  position: relative;
   background-color: $bcg-dark;
   padding-top: 136px;
-
+  padding-bottom: 158px;
   background-image: -moz-element();
   @include tab {
     padding-top: 16px;
@@ -13,51 +13,29 @@
     padding-bottom: 60px;
   }
 }
+.main-hero__container-icecream {
+  @extend .container;
+  position: relative;
+  z-index: 10;
+}
 .main-hero__ice {
   position: absolute;
-  // clip: rect(0px, 290px, 1000px, 0px);
-  // clip: rect(0 100vh 0 0);
   top: -111px;
   right: -56px;
   z-index: -1;
-  // @media screen and (min-width: 320px) and (min-width: 767px) {
-  // clip: rect(0px, 290px, 1000px, 0px);
-  // }
+
   @include tab {
-    // clip: rect(auto auto auto auto);
     top: -53px;
     right: 189px;
-    // top: -100%;
-    // right: -100%;
-    // transform: translate(-50%, -50%);
   }
+
   @include desk {
     top: -75px;
     right: 229px;
   }
 }
-// .main-hero__icecream {
-//   // max-width: 100vmax;
-//   // width: 100vw;
-//   // width: 100vw;
-//   // overflow: hidden;
-//   // clip: rect(0 100%vh 0 0)
-// }
-// .main-hero__icecream {
-// position: relative;
-// }
-// .main-hero__icecream-ellipse {
-// position: relative;
-// left: 0;
-// top: 0;
-// transform: translate(50%, 50%);
-// z-index: -2;
-// }
 .main-hero__icecream-ellipse {
-  // overflow: hidden;
-  // position: relative;
-  // max-width: 100%;
-
+  z-index: -2;
   @include tab {
     width: 335px;
     height: 333px;
@@ -71,12 +49,9 @@
   position: absolute;
   top: 9px;
   left: 83px;
+
   // animation: bounce-top 0.9s both;
   // animation: animate__flip 0.9s both;
-  // left: 0;
-  // top: 0;
-  // transform: translate(50%, 50%);
-  // z-index: -1;
 
   @include tab {
     width: 143px;
@@ -84,31 +59,13 @@
     top: 20px;
     left: 74px;
   }
+
   @include desk {
     width: 236px;
     height: 557px;
     top: 41px;
     left: 119px;
   }
-
-  // @include tab {
-  //   // width: 335px;
-  //   // height: 373px;
-  //   right: 50%;
-  //   bottom: 50%;
-  //   transform: translate(50%, 50%);
-  // }
-
-  // @include desk {
-  // width: 534px;
-  // height: 611px;
-  // }
-}
-.main-hero__container-position {
-  @extend .container;
-  position: relative;
-  z-index: 10;
-  // margin-left: 20px;
 }
 .main-hero__header {
   font-family: 'Titan One';
@@ -141,7 +98,6 @@
   }
 }
 .main-hero__list {
-  padding-bottom: 158px;
   display: flex;
   margin-top: 20px;
   @include tab {
@@ -154,13 +110,21 @@
     margin-bottom: 40px;
   }
 }
+.main-hero__list-item:not(:last-child) {
+  margin-right: 8px;
+  @include tab {
+    margin-right: 7px;
+  }
+  @include desk {
+    margin-right: 12px;
+  }
+}
 .main-hero__btn-product {
   @extend %btn;
   padding: 11px 14px;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25px;
-  margin-right: 8px;
   @include desk {
     font-size: 14px;
     line-height: 1.29px;
@@ -226,29 +190,29 @@
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/hero-ellipse-tab-2x-min.png);
       background-image: -webkit-image-set(url(../images/hero-ellipse-tab-2x-min.webp) 2x);
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
-      top: -3px;
-      right: -10px;
-      // transform: translate(50%, 50%);
-      z-index: -1;
-      @include desk {
-        width: 30px;
-        height: 30px;
-        top: -7px;
-        right: -15px;
-        background-image: url(../images/hero-ellipse-desctop-1x-min.png);
-        background-image: -webkit-image-set(url(../images/hero-ellipse-desc-1x-min.webp) 1x);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (-moz-min-device-pixel-ratio: 2),
-          screen and (-o-min-device-pixel-ratio: 2/1),
-          screen and (-webkit-min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
-          background-image: url(../images/hero-ellipse-desctop-2x-min.png);
-          background-image: -webkit-image-set(url(../images/hero-ellipse-desc-2x-min.webp) 2x);
-        }
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    // transform: translate(50%, 50%);
+    z-index: -1;
+    @include desk {
+      width: 30px;
+      height: 30px;
+      top: -7px;
+      right: -15px;
+      background-image: url(../images/hero-ellipse-desctop-1x-min.png);
+      background-image: -webkit-image-set(url(../images/hero-ellipse-desc-1x-min.webp) 1x);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-moz-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/hero-ellipse-desctop-2x-min.png);
+        background-image: -webkit-image-set(url(../images/hero-ellipse-desc-2x-min.webp) 2x);
       }
     }
   }
@@ -308,6 +272,20 @@
     border-radius: 50%;
     background-color: #fff;
     fill: #d41443;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      // fill: #ffffff;
+      background-color: #d41443;
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
+    }
+    &:hover .main-hero__btn-icon,
+    &:focus .main-hero__btn-icon {
+      width: 8px;
+      height: 8px;
+      fill: #ffffff;
+    }
   }
   @include desk {
     width: 26px;
@@ -317,6 +295,10 @@
 }
 .main-hero__btn-icon {
   fill: $main-btn;
+  // &:hover,
+  // &:focus {
+  //   fill: #fff;
+  // }
 }
 .main-hero__bottom {
   display: none;
@@ -327,6 +309,10 @@
   }
 }
 .main-hero__milk {
+  &:hover,
+  &:focus {
+    animation: bounce-top 0.9s both;
+  }
   @include desk {
     // width: 213px;
     // height: 216px;
@@ -337,17 +323,20 @@
   @include tab {
     display: block;
     position: absolute;
-    bottom: -15px;
+    bottom: -16px;
     right: 15px;
+    // &:hover,
+    // &:focus {
+    // animation: bounce-top;Ї
   }
+
   @include desk {
     // width: 304px;
     // height: 241px;
     bottom: -60px;
   }
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-hero__container {
     overflow: hidden;
   }
