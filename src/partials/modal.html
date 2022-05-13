@@ -25,7 +25,6 @@
     class="read-more__video"
       src="https://www.youtube.com/embed/lO6DiuUAviI"
       title="YouTube video player"
-      frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe>
@@ -51,9 +50,9 @@
       </svg>
     </button>
     <p class="franchise__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, minus!</p>
-    
-      <button type="button" class="button franchise__button"><a href="#" download="">Download file</a></button>
-    
+    <div class="franchise__box_button">
+      <a href="#" download="" class="button franchise__button">Download file</a>
+    </div>
   </div>
   <div class="buy-now modal" data-modal="4">
     <button type="button" class="button modal-button--close js-modal-close">
@@ -111,10 +110,11 @@
                   <use href="./images/icons.svg#icon-mod-check"></use>
                 </svg>
                 </span>
-                <p class="buy-now__checkbox-text">I have read and agree to the</p>
-              <a href="#" class="buy-now__agree-link">
-                privacy policy
-              </a></span>
+                I have read and agree to the
+                <a href="#" class="buy-now__agree-link">
+                  privacy policy
+                </a>
+              </span>
         </label>
         <button class="button buy-now__signup-btn" type="submit">
             Send
