@@ -71,7 +71,7 @@
     color: $main-btn;
 
     font-family: $title-font;
-    font-size: 34px;
+    font-size: 35px;
     line-height: 1.14;
     font-weight: 400;
     text-transform: uppercase;
@@ -117,43 +117,46 @@
 
 
 .about__box {
-    border-radius: 75px;
-    transition: background-color 500ms ease, transform 500ms ease;
-@include tab {
+    border-radius: 50px;
+    transition: background-color 500ms ease, transform 500ms ease, box-shadow 500ms ease, backdrop-filter 500ms ease;
+    @include tab {
         display: flex;
         justify-content: space-around;
-        &:hover{
-    transform: scale(1.03);
-    background-color: rgba($color: #f1356d, $alpha: 0.1);
-    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);;
-    }
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.03);
+            background-color: rgba($color: #f1356d, $alpha: 0.07); 
+            box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);;
+        }
     }
 
 @include desk {
+    border-radius: 100px;
         justify-content: normal;
         &:hover{
-    transform: scale(1.03);
-    background-color: rgba($color: #f1356d, $alpha: 0.1);
-    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);;
-    }
+            backdrop-filter: blur(5px);
+        // transform: scale(1.03);
+        // background-color: rgba($color: #f1356d, $alpha: 0.07);
+        // -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+        // box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);;
+        }
     } 
 }
 
 .about__img {
     width: 280px;
-    margin-bottom: 40px;
+    @media screen and (max-width:767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @include tab {
         width: 336px;
-        margin-bottom: 0;
     }
 
     @include desk {
         width: 501px;
         margin-right: 139px;
-        margin-bottom: 0;
     }
 }
 
@@ -162,21 +165,42 @@ box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 
     font-size: 12px;
     line-height: 1.58;
     font-weight: 500;
-    width: 220px;
+
+    // width: 220px;
+    margin-right: 80px;
 
     &--top {
         color: $text-dark;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
         @include tab {
         font-size: 14px;
         line-height: 1.78;
         width: 334px;
+        margin-right: 0;
         }
         @include desk {
         font-size: 16px;
         line-height: 1.75;
         margin-bottom: 32px;
         width: 463px;
+        margin-right: 0;
+        }
+    }
+
+    &--middle{
+        color: $text-muted;
+        margin-bottom: 20px;
+        @include tab {
+        font-size: 14px;
+        line-height: 1.92;
+        margin-bottom: 25px;
+        width: 334px;
+        margin-right: 0;
+        }
+        @include desk {
+        margin-bottom: 40px;
+        width: 463px;
+        margin-right: 0;
         }
     }
 
@@ -188,10 +212,12 @@ box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 
         line-height: 1.92;
         margin-bottom: 40px;
         width: 334px;
+        margin-right: 0;
         }
         @include desk {
         margin-bottom: 40px;
         width: 463px;
+        margin-right: 0;
         }
     }
 
@@ -205,10 +231,17 @@ box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 
 }
 
 .about__list {
+    margin-top: 40px;
+
+    @include tab {
+        margin-top: 0;
+    }
+
     @include desk {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 0;
     }
 }
 
@@ -225,8 +258,9 @@ box-shadow: 5px 5px 15px 5px #FF8080, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
+    &:hover,&:focus {
         border: 1px solid $main-btn-hover;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
     }
 
     &--svg {

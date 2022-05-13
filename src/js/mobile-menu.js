@@ -28,4 +28,5 @@
       }
       //console.log(event.querySelector('.mob-menu__link'));
     });
-})()
+  })()
+
