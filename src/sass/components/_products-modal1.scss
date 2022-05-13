@@ -1,0 +1,173 @@
+  .products-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 320px;
+    min-height: 500px;
+
+    padding: 30px 15px 15px 15px;
+    background-color: #c7f3e4;
+    border: 2px solid $bcg-mob-menu;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    z-index: 70;
+    overflow-y: auto;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform $anim-fast, opacity $anim-fast, visibility $anim-fast;
+    @media (max-width: 479px) {
+      width: 80%;
+    }
+    @media (max-height: 575px) {
+      height: 100vh;
+    }
+    @media (min-width: 480px) {
+      width: 480px;
+    }
+    @media (min-width: 768px) {
+      width: 600px;
+    }
+  
+    &.active {
+      transform: translate(-50%, -50%);
+    }
+    &__title {
+        font-family: $title-font;
+        font-weight: 400;
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+        color: $text-main;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+  }
+
+  .carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .carousel-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(-182px) rotateY(0);
+    transform: translateZ(-182px) rotateY(0);
+    -webkit-animation: carousel 12s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+    animation: carousel 12s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+  }
+  
+  .carousel-item:nth-child(1) {
+        -webkit-transform: rotateY(0) translateZ(182px);
+    transform: rotateY(0) translateZ(182px);
+  }
+  
+  .carousel-item:nth-child(2) {
+    
+    -webkit-transform: rotateY(60deg) translateZ(182px);
+    transform: rotateY(60deg) translateZ(182px);
+  }
+  
+  .carousel-item:nth-child(3) {
+     -webkit-transform: rotateY(120deg) translateZ(182px);
+    transform: rotateY(120deg) translateZ(182px);
+  }
+  
+  .carousel-item:nth-child(4) {
+    -webkit-transform: rotateY(180deg) translateZ(182px);
+   transform: rotateY(180deg) translateZ(182px);
+ }
+
+ .carousel-item:nth-child(5) {
+    -webkit-transform: rotateY(240deg) translateZ(182px);
+   transform: rotateY(240deg) translateZ(182px);
+ }
+  
+ .carousel-item:nth-child(6) {
+    -webkit-transform: rotateY(300deg) translateZ(182px);
+   transform: rotateY(300deg) translateZ(182px);
+ }
+
+
+  @-webkit-keyframes 
+  carousel {  0%, 14.3% {
+   -webkit-transform: translateZ(-182px) rotateY(0);
+   transform: translateZ(-182px) rotateY(0);
+  }
+   24.3%, 28.4% {
+   -webkit-transform: translateZ(-182px) rotateY(-60deg);
+   transform: translateZ(-182px) rotateY(-60deg);
+  }
+  36.5%, 42.6% {
+   -webkit-transform: translateZ(-182px) rotateY(-120deg);
+   transform: translateZ(-182px) rotateY(-120deg);
+  }
+  48.6%, 56.8% {
+   -webkit-transform: translateZ(-182px) rotateY(-180deg);
+   transform: translateZ(-182px) rotateY(-180deg);
+  }
+  64.8%, 71.1% {
+    -webkit-transform: translateZ(-182px) rotateY(-240deg);
+    transform: translateZ(-182px) rotateY(-240deg);
+   }
+   78.1%, 85.3% {
+    -webkit-transform: translateZ(-182px) rotateY(-300deg);
+    transform: translateZ(-182px) rotateY(-300deg);
+   }
+   94.3%, 100% {
+    -webkit-transform: translateZ(-182px) rotateY(-300deg);
+    transform: translateZ(-182px) rotateY(-300deg);
+   }
+  }
+   @keyframes 
+  carousel {  0%, 14.3% {
+    -webkit-transform: translateZ(-182px) rotateY(0);
+    transform: translateZ(-182px) rotateY(0);
+   }
+    24.3%, 28.4% {
+    -webkit-transform: translateZ(-182px) rotateY(-60deg);
+    transform: translateZ(-182px) rotateY(-60deg);
+   }
+   36.5%, 42.6% {
+    -webkit-transform: translateZ(-182px) rotateY(-120deg);
+    transform: translateZ(-182px) rotateY(-120deg);
+   }
+   48.6%, 56.8% {
+    -webkit-transform: translateZ(-182px) rotateY(-180deg);
+    transform: translateZ(-182px) rotateY(-180deg);
+   }
+   64.8%, 71.1% {
+     -webkit-transform: translateZ(-182px) rotateY(-240deg);
+     transform: translateZ(-182px) rotateY(-240deg);
+    }
+    78.1%, 85.3% {
+     -webkit-transform: translateZ(-182px) rotateY(-300deg);
+     transform: translateZ(-182px) rotateY(-300deg);
+    }
+    94.3%, 100% {
+     -webkit-transform: translateZ(-182px) rotateY(-300deg);
+     transform: translateZ(-182px) rotateY(-300deg);
+    }
+  }
