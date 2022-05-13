@@ -46,17 +46,17 @@
     color: $text-main;
     letter-spacing: 0.04em;
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 148px;
     
     @include tab {
         font-size: 48px;
-        margin-bottom: 16px;
+        margin-bottom: 154px;
          }
          
     @include desk {
         font-size: 58px;
         line-height: 1.14;
-        margin-bottom: 5px;
+        margin-bottom: 261px;
         }
     }
 
@@ -84,25 +84,28 @@
   
     border-radius: 24px;
     width: 280px;
-    min-height: 489px;
-    margin-top: 140px;
-    padding-left: 39px;
-    padding-right: 41px;
+    padding-top: 160px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 40px;
+
+    
     
 
-    @include mob {
-      max-width: 280px;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 140px;
+           }
+          
     }
     
     @include tab {
       flex-basis: calc((100% - 3 * 33px) / 3);
       margin: 16.5px;
-      margin-top: 138px;
+            
   
       max-width: 224px;
-      min-height: 473px;
-  
+      padding-top: 118px;
       padding-left: 32px;
       padding-right: 32px;
       padding-bottom: 40px;
@@ -111,13 +114,12 @@
     @include desk {
       flex-basis: calc((100% - 3 * 32px) / 3);
       margin: 16px;
-      margin-top: 261px;
-  
+
+           
       min-width: 395px;
-      min-height: 535px;
-  
-      padding-left: 76px;
-      padding-right: 76px;
+      padding-top: 165px;
+      padding-left: 75px;
+      padding-right: 75px;
       padding-bottom: 60px;
     }
   }
@@ -137,6 +139,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    animation: animate-products 5500ms infinite 3000ms;
 
     @include pixel-2x {
       background-image: url('/images/products-ice1-mob-2x-min.png');
@@ -182,6 +185,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  animation: animate-products 5500ms infinite 3000ms;
 
   @include pixel-2x {
     background-image: url('/images/products-ice2-mob-2x-min.png');
@@ -227,6 +231,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  animation: animate-products 5500ms infinite 3001ms;
 
   @include pixel-2x {
     background-image: url('/images/products-ice3-mob-2x-min.png');
@@ -268,16 +273,15 @@
     color: $text-white;
     letter-spacing: 0.04em;
     text-align: center;
-    padding-top: 160px;
+    
     @include tab {
-        padding-top: 118px;
+        
         }
     
      @include desk {
         font-size: 30px;
         line-height: 1.13;
-        padding-top: 165px;
-        }
+         }
     &::after {
         content: "";
         display: block;
@@ -299,7 +303,6 @@
         color: $text-white;
         text-align: center;
         margin-bottom: 32px;
-        margin-top: 32px;
         letter-spacing: 0.04em;
 
         @include tab {

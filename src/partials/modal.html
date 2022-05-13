@@ -10,7 +10,7 @@
   <use href="../src/images/icons.svg#icon-vector-button"></use>
 </svg></button> -->
   <div class="read-more modal" data-modal="1">
-    <button type="button" class="button read-more__button--close js-modal-close">
+    <button type="button" class="button modal-button--close js-modal-close">
       <svg class="icon" width="14" height="14">
         <use href="../src/images/icons.svg#icon-close1"></use>
       </svg>
@@ -31,7 +31,7 @@
     ></iframe>
   </div>
   <div class="our-locations modal" data-modal="2">
-    <button type="button" class="button our-locations__button--close js-modal-close">
+    <button type="button" class="button modal-button--close js-modal-close">
       <svg class="icon" width="14" height="14">
         <use href="../src/images/icons.svg#icon-close1"></use>
       </svg>
@@ -45,10 +45,174 @@
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <div class="franchise modal" data-modal="3">
+    <button type="button" class="button modal-button--close js-modal-close">
+      <svg class="icon" width="14" height="14">
+        <use href="../src/images/icons.svg#icon-close1"></use>
+      </svg>
+    </button>
     <p class="franchise__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, minus!</p>
-    <a href="#" download="">
-      <button type="button" class="button franchise__button">Download file</button>
-    </a>
+    
+      <button type="button" class="button franchise__button"><a href="#" download="">Download file</a></button>
+    
   </div>
+  <div class="buy-now modal" data-modal="4">
+    <button type="button" class="button modal-button--close js-modal-close">
+      <svg class="icon" width="14" height="14">
+        <use href="../src/images/icons.svg#icon-close1"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now__title">we will call you back</h2>
+    <form name="signup-form" class="buy-now__form" autocomplete="on">
+      <label class="buy-now__label"
+      >Name
+        <span class="buy-now__input-box">
+          <svg class="icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-mod-person"></use></svg>
+          <input type="text"
+                name="username" 
+                class="buy-now__input" required></span>
+        </label>
+        <label class="buy-now__label"
+        >Telephone
+        <span class="buy-now__input-box">
+          <svg class="icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-mod-phone"></use></svg>
+          <input type="tel"
+                name="user-tel" 
+                class="buy-now__input" required></span>
+        </label>
+        <label class="buy-now__label"
+        >Mail
+        <span class="buy-now__input-box">
+          <svg class="icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-mod-email"></use></svg>
+          <input type="email"
+                name="user-email" 
+                class="buy-now__input" required></span>
+        </label>
+        <label class="buy-now__label buy-now__coment"
+        >Comment
+          <textarea 
+              name="user-feedback"
+              rows="7"
+              placeholder="Enter text">
+          </textarea>
+        </label>
+        <label class="buy-now__label buy-now__agree">
+          <input 
+              type="checkbox"
+              name="agreement"
+              value="agreement"
+              required
+              class="buy-now__checkbox">
+              <span class="buy-now__agree-text">
+                <span class="buy-now__custom-checkbox">
+                  <svg class="icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-mod-check"></use>
+                </svg>
+                </span>
+                <p class="buy-now__checkbox-text">I have read and agree to the</p>
+              <a href="#" class="buy-now__agree-link">
+                privacy policy
+              </a></span>
+        </label>
+        <button class="button buy-now__signup-btn" type="submit">
+            Send
+            <svg class="contacts__btn-icon" width="6px" height="10px"  >
+                <use href="/images/icons.svg#icon-Vector-button-white"></use>
+            </svg>
+          </button>
+    </form>
+  </div>
+<div class="hero-modal modal" data-modal="5">
+  <button type="button" class="button hero-modal__button--close js-modal-close">
+    <svg class="icon" width="14" height="14">
+      <use href="../src/images/icons.svg#icon-close1"></use>
+    </svg>
+  </button>
+  <table class="hero-modal__table">
+    <caption class="hero-modal__title">
+      why we choose organic milk
+    </caption>
+    <thead class="hero-modal__table-title">
+      <tr class="hero-modal__table-row">
+        <th class="hero-modal__table-text">Parameters</th>
+        <th class="hero-modal__table-text">Organic Milk</th>
+        <th class="hero-modal__table-text">Regular Milk</th>
+      </tr>
+    </thead>
+
+    <tbody class="hero-modal__table-body">
+      <tr class="hero-modal__table-row">
+        <td class="hero-modal__table-text">Definition</td>
+        <td class="hero-modal__table-text">
+          It is the milk obtained from cows feeding on chemical free grasses.
+        </td>
+        <td class="hero-modal__table-text">
+          It is the milk obtained from cows feeding on grass treated with chemicals.
+        </td>
+      </tr>
+
+      <tr class="hero-modal__table-row">
+        <td class="hero-modal__table-text">Taste</td>
+        <td class="hero-modal__table-text">It is more whipped and buttery.</td>
+        <td class="hero-modal__table-text">It is less whipped and buttery.</td>
+      </tr>
+
+      <tr class="hero-modal__table-row">
+        <td class="hero-modal__table-text">Pasteurization</td>
+        <td class="hero-modal__table-text">
+          Pasteurized using Ultra high temperature to 132 degree Celsius.
+        </td>
+        <td class="hero-modal__table-text">
+          Pasteurized using standard method up to 71 degree Celsius.
+        </td>
+      </tr>
+
+      <tr class="hero-modal__table-row">
+        <td class="hero-modal__table-text">Medicine</td>
+        <td class="hero-modal__table-text">
+          MORE: Omega 3 Fatty Acids, Antioxidants, Nutritional Minerals
+        </td>
+        <td class="hero-modal__table-text">
+          MORE: Antibiotics, Synthetic Growth Hormones, Controversial Pesticides
+        </td>
+      </tr>
+
+      <tr class="hero-modal__table-row">
+        <td class="hero-modal__table-text">Certification</td>
+        <td class="hero-modal__table-text">Yes</td>
+        <td class="hero-modal__table-text">No</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- modal-6 -->
+
+
+<!-- modal-6 -->
   <div class="overlay js-overlay-modal"></div>
+</div>
+
+
+<!-- модалка для продукту #1-->
+<div class="products-modal modal" data-modal="6">
+  <button type="button" class="button modal-button--close js-modal-close">
+    <svg class="icon" width="14" height="14">
+      <use href="../src/images/icons.svg#icon-close1"></use>
+    </svg>
+  </button>
+
+  <h2 class="products-modal__title">You will like it too</h2>
+  <div class="carousel">
+    <div class="carousel-content">
+      <div class="carousel-item"><img src="/images/gallery-products1.jpg" alt="продукт компании"></div>
+      <div class="carousel-item"><img src="/images/gallery-products2.jpg" alt="продукт компании"></div>
+      <div class="carousel-item"><img src="/images/gallery-products3.jpg" alt="продукт компании"></div>
+      <div class="carousel-item"><img src="/images/gallery-products4.jpg" alt="продукт компании"></div>
+      <div class="carousel-item"><img src="/images/gallery-products5.jpg" alt="продукт компании"></div>
+      <div class="carousel-item"><img src="/images/gallery-products6.jpg" alt="продукт компании"></div>
+      </div>
+  </div>
+     
 </div>

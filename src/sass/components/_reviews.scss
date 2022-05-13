@@ -17,7 +17,8 @@
   background-color: #fafafa;
   margin: 24px 0px;
   position: relative;
-  padding: 51px 58px 18px 65px;
+  padding: 51px 50px 18px 50px;
+  max-width: 280px;
   &::before {
     content: '';
     position: absolute;
@@ -30,13 +31,26 @@
   }
   @include tab {
     margin: 20px 0px 4px 0px;
-    padding: 37px 55px 44px 51px;
+    padding: 37px 6px 44px 6px;
+    max-width: 620px;
     &::before {
       width: 61px;
       height: 40px;
       background-size: 61px 40px;
       top: 20px;
       left: 6px;
+    }
+  }
+  @include desk {
+    margin: 16px 0px;
+    padding: 47px 107px 39px 105px;
+    max-width: 1034px;
+    &::before {
+      width: 54px;
+      height: 40px;
+      background-size: 54px 40px;
+      top: 32px;
+      left: 105px;
     }
   }
 }
@@ -46,25 +60,46 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
-  max-width: 157px;
   background-image: repeating-linear-gradient(0deg, #e1e1e1, transparent 1px 31px);
+  padding: 0 15px;
   @include tab {
     font-size: 14px;
     line-height: 2.16;
-    max-width: 514px;
+    padding-left: 45px;
+    padding-right: 49px;
+  }
+  @include desk {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    padding-left: 37px;
+    padding-right: 35px;
   }
 }
 .reviews__slider-customer-name {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
   margin: 16px 0px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    background-image: url('/images/reviews-red-dots.svg');
+    background-size: 32px 4px;
+    top: -16px;
+    left: calc(100% / 2 - 15px);
+  }
   @include tab {
     font-size: 16px;
     margin-bottom: 32px;
   }
+  @include desk {
+    font-size: 20px;
+  }
 }
-
 .reviews__slider-switch {
   text-align: center;
 }
@@ -83,9 +118,18 @@
   }
 }
 
-.btn-active,
-.reviews__slider-dot:hover {
-  background-color: #d31342;
+.btn-active {
+  background-color: transparent;
+}
+.btn-active::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url(/images/reviews-dot-active.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  object-fit: contain;
 }
 
 .fade {

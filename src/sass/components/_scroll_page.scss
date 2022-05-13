@@ -1,0 +1,34 @@
+.scroll_page {
+  position: relative;
+}
+
+.scroll_page__btn {
+  height: 44px;
+  width: 44px;
+
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+
+  background-color: $main-btn;
+  border: none;
+  border-radius: 50%;
+  color: $text-white;
+  cursor: pointer;
+
+  transition: background-color $anim-fast, transform $anim-fast;
+  transform: translateY(0px);
+
+  z-index: 9;
+  visibility: hidden;
+}
+
+.scroll_page__btn:hover {
+  background-color: $main-btn-hover;
+  transform: translateY(-10px);
+}
+.scroll_page__svg {
+  width: 15px;
+  height: 18px;
+  transform: rotate(270deg);
+}

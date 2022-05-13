@@ -1,0 +1,173 @@
+.foot {
+  background-color: $bcg-light;
+  padding-top: 24px;
+  @include tab {
+    padding-top: 20px;
+  }
+  @include desk {
+    padding-top: 60px;
+  }
+}
+.foot__container {
+  margin-bottom: 40px;
+  @include tab {
+    display: flex;
+    justify-content: space-between;
+  @include desk {
+    margin-bottom: 60px;
+  }
+  }
+}
+.foot__slogan {
+  margin-bottom: 40px;
+  overflow-wrap: break-word;
+  @include tab {
+    margin-bottom: 0;
+  }
+}
+
+.foot__ice-cream {
+  width: 232px;
+  @include tab {
+    width: 340px;
+  }
+  @include desk {
+    width: 474px;
+  }
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.15;
+  @include tab {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @include desk {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  color: $text-secondary;
+}
+.foot__passion {
+  width: 200px;
+  @include tab {
+    width: 340px;
+  }
+  @include desk {
+    width: 474px;
+  }
+  text-transform: uppercase;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  @include tab {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+  @include desk {
+    font-size: 58px;
+    line-height: 1.15;
+  }
+
+  color: $text-main;
+}
+.socials {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-bottom: 40px;
+}
+.socials__link {
+  width: 32px;
+  height: 32px;
+  @include tab {
+    width: 34px;
+    height: 34px;
+  }
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $text-white;
+  background-color: $bcg-icon;
+
+  transition: background-color $anim-fast;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-hover;
+  }
+}
+.socials__icon {
+  fill: currentColor;
+}
+.socials__item {
+  & + & {
+    margin-left: 28px;
+    @include tab {
+      margin-left: 30px;
+    }
+    @include desk {
+      margin-left: 24px;
+    }
+  }
+}
+.foot__address {
+  display: flex;
+  justify-content: end;
+  // margin-bottom: 40px;
+
+  font-style: normal;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  @include tab {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @include desk {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+.foot__contact {
+  color: $text-dark;
+}
+
+.foot__link {
+  font-weight: 500;
+
+  color: $text-main;
+}
+
+.foot__wrap-copyright {
+  display: flex;
+  overflow-wrap: break-word;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  @include tab {
+    padding: 8px 0;
+  }
+  border-top: 1px solid rgba(225, 225, 225, 1);
+}
+.foot__copyright {
+  width: 140px;
+  @include tab {
+    width: 276px;
+  }
+  margin: 0 auto;
+
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+  color: $text-muted;
+}
