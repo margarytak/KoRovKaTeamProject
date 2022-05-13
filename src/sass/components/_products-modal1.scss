@@ -6,7 +6,7 @@
     min-height: 500px;
 
     padding: 30px 15px 15px 15px;
-    background-color: #c7f3e4;
+    background-color: #fff5f6;
     border: 2px solid $bcg-mob-menu;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -25,7 +25,7 @@
       width: 480px;
     }
     @media (min-width: 768px) {
-      width: 600px;
+      width: 700px;
     }
   
     &.active {
@@ -45,12 +45,15 @@
   }
 ///
 .scene {
-  border: 1px solid #CCC;
+  border: 1px solid transparent;
   margin: 40px 0;
   position: relative;
   width: 210px;
   height: 140px;
-  margin: 40px auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
   perspective: 1000px;
 }
 
@@ -66,26 +69,20 @@
 .carousel__cell {
   position: absolute;
   width: 190px;
-  height: 120px;
+  height: 190px;
   left: 10px;
   top: 10px;
-  border: 2px solid black;
+  border: 2px solid $main-btn;
   line-height: 116px;
   font-size: 80px;
   font-weight: bold;
   color: white;
   text-align: center;
-}
 
-.carousel__cell:nth-child(9n+1) { background: hsla(  0, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+2) { background: hsla( 40, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+3) { background: hsla( 80, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+4) { background: hsla(120, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+5) { background: hsla(160, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+6) { background: hsla(200, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+7) { background: hsla(240, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+8) { background: hsla(280, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+0) { background: hsla(320, 100%, 50%, 0.8); }
+  &:hover {
+    border: 4px solid $main-btn;
+  }
+}
 
 .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
 .carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
@@ -96,3 +93,18 @@
 .carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
 .carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
 .carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+
+.button-box {
+   display: flex;
+  justify-content: center;
+
+}
+.previous-button, .next-button {
+  margin-right: 10px;
+  @extend %btn;
+  padding: 8px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.31;
+  border-radius: 2px;
+  }
