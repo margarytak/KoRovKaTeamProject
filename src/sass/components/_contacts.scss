@@ -37,7 +37,8 @@
     }
     &:hover,
     &:focus {
-      border: 2px dashed $main-btn;
+      border-style: dashed;
+      border-color:$main-btn;
       transform: scale(1.05);
     }
   }
@@ -67,6 +68,7 @@
       padding-top: 32px;
     }
   }
+    
 
   &__wrap {
     padding-top: 24px;
@@ -308,6 +310,10 @@ display: flex;
 
 .contacts__item:hover .contacts__link,
 .contacts__item:focus .contacts__link {
-  color: $text-main;
-  font-size: 16px;
+color: $text-main;
+  @include desk{
+font-size: 16px;
+  }
+  
+  
 }
