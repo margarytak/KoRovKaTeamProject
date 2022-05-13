@@ -4,6 +4,7 @@
   padding-top: 8px;
   padding-bottom: 25px;
 
+
   @include desk {
     padding-top: 37px;
     padding-bottom: 60px;
@@ -48,16 +49,21 @@
   display: none;
 }
 
-.site-nav__item {
+.site-nav__link {
   color: $text-white;
 
-  transition: color $anim-fast;
+  
+    transition-property: color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__item:hover,
-.site-nav__item:focus {
+.site-nav__link:hover,
+.site-nav__link:focus
+ {
   color: $accent-hover;
 }
+
 
 @include desk {
   .site-nav {
@@ -80,6 +86,16 @@
 
 .header__button {
   display: none;
+
+  transition: background-color $anim-fast, box-shadow $anim-fast;
+}
+
+.header__button:focus,
+.header__button:hover {
+  
+      background-color: $secondary-btn-hover;
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
+    
 }
 
 @include tab {

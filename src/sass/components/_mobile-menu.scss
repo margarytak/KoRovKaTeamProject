@@ -5,24 +5,19 @@
   z-index: 35;
   top: 0;
   left: 100%;
-  right: -1000px;
+  right: -400px;
   width: 100vw;
   height: 100vh;
   width: 250px;
   height: 502px;
   padding: 20px 0 20px 20px;
-  transition: 1000ms;
+  transition: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: $bcg-mob-menu;
 
   @media screen and (max-width: 1279px) {
     margin-left: auto;
   }
-
-  // @media screen and (min-width: 768px) and (max-width: 1279px) {
-  //   width: 254px;
-  //   height: 1020px;
-  // }
 
   &.is-open {
     position: fixed;
@@ -49,7 +44,6 @@
       top: 0;
       right: 0;
       box-shadow: (-8px 0px 20px rgba(0, 0, 0, 0.25));
-      transition: 1000ms;
     }
   }
 }
@@ -63,10 +57,6 @@
   fill: #ffffff;
 }
 
-// .mob-menu__container {
-//     width: 100%;
-//     height: 100%;
-// }
 
 .mob-menu-btn {
   position: relative;
@@ -125,6 +115,16 @@
   font-size: 16px;
   line-height: 1.3;
   font-weight: 700;
+
+  transition: background-color $anim-fast, box-shadow $anim-fast;
+}
+
+.mob-menu__main-button:focus,
+.mob-menu__main-button:hover {
+
+  background-color: $secondary-btn-hover;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
+
 }
 
 .mob-menu__main-button--svg {
@@ -150,15 +150,20 @@
 .current {
   color: $text-main;
 }
-
-.mob-menu__item {
+.mob-menu__link {
   color: $text-white;
-  transition: color $anim-fast;
+    transition-property: color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-menu__item:hover,
-.mob-menu__item:focus {
+.mob-menu__link:hover,
+.mob-menu__link:focus {
   color: $accent-hover;
+}
+
+.hidden{
+  visibility: hidden;
 }
 
 // .mob-menu__current {
