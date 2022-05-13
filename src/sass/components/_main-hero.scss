@@ -340,7 +340,12 @@
     bottom: -60px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
+  .main-hero__container {
+      margin-top: -2px;
+    }
+}
+@media screen and (max-width: 767px) {
   .main-hero__container {
     overflow: hidden;
   }
