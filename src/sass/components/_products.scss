@@ -334,6 +334,21 @@
     fill: $main-btn;
 }
 
+.img-sl {
+    max-width: 450px;
+    border-radius: 25px;
+}
+
+.img-sl-2 {
+    max-width: 380px;
+    border-radius: 25px;
+}
+
+.img-r {
+    border: 2px solid $bcg-mob-menu;
+    border-radius: 25px;
+}
+
 
 @keyframes animate-products {
     0% {
