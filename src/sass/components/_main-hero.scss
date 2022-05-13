@@ -319,9 +319,15 @@
     &:hover,
     &:focus {
       // fill: #ffffff;
-      // background-color: #d41443;
+    background-color: #d41443;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
       }
+    &:hover .main-hero__btn-icon,
+    &:focus .main-hero__btn-icon {
+      width: 8px;
+      height: 8px;
+      fill: #ffffff;
+    }
   }
   @include desk {
     width: 26px;
