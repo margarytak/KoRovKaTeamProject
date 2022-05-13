@@ -24,9 +24,18 @@
 })(window.Element.prototype);
 
 document.addEventListener('DOMContentLoaded', function () {
-  var modalButtons = document.querySelectorAll('.js-open-modal'), /*<--- Кнопка открытия (Ставим как один из класов), рядом (не в class а просто рядом) ставим data-modal="цифра" */
-    overlay = document.querySelector('.js-overlay-modal'),         /*<--- Оверлей не трогаем, он срабатывает на все модалки*/
-    closeButtons = document.querySelectorAll('.js-modal-close');  /*<--- Кнопка закрытия (Ставим как один из класов), data-modal не нужна*/
+  var modalButtons =
+      document.querySelectorAll(
+        '.js-open-modal',
+      ) /*<--- Кнопка открытия (Ставим как один из класов), рядом (не в class а просто рядом) ставим data-modal="цифра" */,
+    overlay =
+      document.querySelector(
+        '.js-overlay-modal',
+      ) /*<--- Оверлей не трогаем, он срабатывает на все модалки*/,
+    closeButtons =
+      document.querySelectorAll(
+        '.js-modal-close',
+      ); /*<--- Кнопка закрытия (Ставим как один из класов), data-modal не нужна*/
 
   modalButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
@@ -38,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      body.classList.add('no-scroll');
+      mobileMenuRef.classList.remove('is-open');
+      menuBtnRef.classList.remove('is-open');
     });
   });
 
@@ -47,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      body.classList.remove('no-scroll');
     });
   });
 
@@ -58,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.overlay').classList.remove('active');
+        body.classList.remove('no-scroll');
       }
     },
     false,
@@ -66,5 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
   overlay.addEventListener('click', function () {
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
+    body.classList.remove('no-scroll');
   });
 });
+
+const body = document.querySelector('body');
+const mobileMenuRef = document.querySelector('[data-menu]');
+const menuBtnRef = document.querySelector('[data-menu-button]');

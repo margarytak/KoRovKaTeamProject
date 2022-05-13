@@ -5,9 +5,11 @@
   cursor: pointer;
   color: $text-white;
   background-color: $main-btn;
+  transition: background-color $anim-fast, box-shadow $anim-fast;
   &:hover,
   &:focus {
     background-color: $main-btn-hover;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
   }
 }
 
@@ -18,8 +20,10 @@
   cursor: pointer;
   color: $text-main;
   background-color: $secondary-btn;
+  transition: background-color $anim-fast, box-shadow $anim-fast;
   &:hover,
     &:focus {
       background-color: $secondary-btn-hover;
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
     }
 }
