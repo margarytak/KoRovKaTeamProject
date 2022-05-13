@@ -95,10 +95,12 @@
   fill: $main-btn;
 }
 
-.mob-menu-btn:focus .mob-menu-btn__icon--open,
 .mob-menu-btn:focus .mob-menu-btn__icon--close {
   fill: #ffffff;
 }
+//.current > a {
+//  color: #d41443;
+//}
 
 .mob-menu__main-button {
   @extend %btn-reverse;

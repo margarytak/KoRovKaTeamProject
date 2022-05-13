@@ -24,6 +24,7 @@
           menuBtnRef.setAttribute("aria-expanded", false);
           menuBtnRef.classList.toggle("is-open");
           buyNow.classList.toggle('hidden');
+          body.classList.toggle("no-scroll");
         });
       }
       //console.log(event.querySelector('.mob-menu__link'));
